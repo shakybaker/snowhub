@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Sporthub">
+</Property><Property Name="Solution File" Value="C:\Sandpit\Snowhub\Sporthub.sln">
+</Property><Property Name="Date" Value="10 January 2012">
+</Property><Property Name="Time" Value="15:09:12">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="Sporthub.Mvc" Source="Sporthub.Mvc\Sporthub.Mvc.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Sporthub.Mvc" Source="Sporthub.Mvc\Sporthub.Mvc.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Sporthub.Mvc" Source="Sporthub.Mvc\Sporthub.Mvc.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

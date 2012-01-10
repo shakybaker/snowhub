@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sporthub.Repository", "Sporthub.Repository\Sporthub.Repository.csproj", "{AF68B80B-D8E7-486C-BC75-B8E4E3ECBEB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sporthub.Model", "Sporthub.Model\Sporthub.Model.csproj", "{F21F0A93-F9F2-45CF-AAC0-EABD4A63F1E5}"
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sporthub.Services", "Sporth
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sporthub.Utils", "Sporthub.Utilities\Sporthub.Utils.csproj", "{85BA148F-35E6-43CC-B11A-65DE271C3EB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sporthub.Mvc", "Sporthub.Mvc\Sporthub.Mvc.csproj", "{649D4EEA-3139-49F9-872E-381A50255DCB}"
+Project("{00000000-0000-0000-0000-000000000000}") = "Sporthub.Mvc", "Sporthub.Mvc\Sporthub.Mvc.csproj", "{649D4EEA-3139-49F9-872E-381A50255DCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sporthub.Data", "Sporthub.Data\Sporthub.Data.csproj", "{D25C2509-8A24-46FD-848F-E875AE655BF9}"
 EndProject

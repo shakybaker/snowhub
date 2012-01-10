@@ -8,63 +8,11 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Static/d:Scripts/f:sporthub.maps.js" caret="10835" fromTop="41" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Resorts/f:Reviews.aspx" caret="13292" fromTop="48" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:AjaxController.cs" caret="26721" fromTop="25" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Code/d:Helpers/f:ResortHelper.cs" caret="23325" fromTop="18" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Resorts/f:Overview.aspx" caret="24244" fromTop="57" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/f:Global.asax.cs" caret="7374" fromTop="24" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Resorts/f:Places.aspx" caret="1921" fromTop="35" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Static/d:Scripts/f:sporthub.js" caret="348" fromTop="12" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:ResortsController.cs" caret="1200" fromTop="20" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Static/d:Scripts/f:maps.js" caret="12014" fromTop="1" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Static/d:Styles/f:Sporthub.css" caret="567" fromTop="19" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Account/f:Login.aspx" caret="2092" fromTop="13" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Account/f:Create.aspx" caret="739" fromTop="14" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Account/f:Profile.aspx" caret="19506" fromTop="33" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Shared/d:Masters/f:Admin.Master" caret="654" fromTop="11" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Shared/d:Masters/f:NoNav.Master" caret="705" fromTop="12" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/f:Web.config" caret="4894" fromTop="9" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Code/f:FacebookGraphAPI.cs" caret="19119" fromTop="30" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:HomeController.cs" caret="4869" fromTop="134" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:SporthubController.cs" caret="4763" fromTop="9" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:AccountController.cs" caret="852" fromTop="0" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Shared/d:Masters/f:Sporthub.Master" caret="7696" fromTop="17" />
       <File id="F21F0A93-F9F2-45CF-AAC0-EABD4A63F1E5/f:User.cs" caret="4126" fromTop="23" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Shared/d:Masters/f:Home.Master" caret="10883" fromTop="12" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Home/f:Index.aspx" caret="4442" fromTop="19" />
     </RecentFiles>
     <RecentEdits>
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Code/f:FacebookGraphAPI.cs" caret="20109" fromTop="60" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:SporthubController.cs" caret="4193" fromTop="58" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:SporthubController.cs" caret="1380" fromTop="30" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:AccountController.cs" caret="42836" fromTop="40" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:AccountController.cs" caret="43097" fromTop="45" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:AccountController.cs" caret="45589" fromTop="53" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:AccountController.cs" caret="169" fromTop="6" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:AccountController.cs" caret="43664" fromTop="37" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:SporthubController.cs" caret="253" fromTop="2" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:HomeController.cs" caret="440" fromTop="18" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:HomeController.cs" caret="2656" fromTop="20" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:HomeController.cs" caret="1068" fromTop="32" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:HomeController.cs" caret="3152" fromTop="23" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:HomeController.cs" caret="3529" fromTop="33" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:HomeController.cs" caret="4678" fromTop="53" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:HomeController.cs" caret="4196" fromTop="46" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:SporthubController.cs" caret="576" fromTop="13" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:SporthubController.cs" caret="4766" fromTop="9" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Controllers/f:AccountController.cs" caret="45666" fromTop="47" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Home/f:Index.aspx" caret="1962" fromTop="26" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Shared/d:Masters/f:Sporthub.Master" caret="5218" fromTop="13" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Shared/d:Masters/f:Home.Master" caret="8356" fromTop="13" />
       <File id="F21F0A93-F9F2-45CF-AAC0-EABD4A63F1E5/f:User.cs" caret="3729" fromTop="15" />
       <File id="F21F0A93-F9F2-45CF-AAC0-EABD4A63F1E5/f:User.cs" caret="4126" fromTop="23" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Shared/d:Masters/f:Sporthub.Master" caret="4604" fromTop="6" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Shared/d:Masters/f:Home.Master" caret="7753" fromTop="7" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Shared/d:Masters/f:Home.Master" caret="10883" fromTop="32" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Shared/d:Masters/f:Sporthub.Master" caret="7748" fromTop="41" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Home/f:Index.aspx" caret="1169" fromTop="17" />
-      <File id="649D4EEA-3139-49F9-872E-381A50255DCB/d:Views/d:Home/f:Index.aspx" caret="5926" fromTop="31" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

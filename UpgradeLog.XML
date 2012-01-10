@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Sporthub">
+</Property><Property Name="Solution File" Value="C:\Sandpit\Snowhub\Sporthub.sln">
+</Property><Property Name="Date" Value="10 January 2012">
+</Property><Property Name="Time" Value="15:06">
+</Property></Properties><Event ErrorLevel="0" Project="Sporthub.Repository" Source="Sporthub.Repository\Sporthub.Repository.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Sporthub.Repository" Source="Sporthub.Repository\Sporthub.Repository.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Sporthub.Model" Source="Sporthub.Model\Sporthub.Model.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Sporthub.Model" Source="Sporthub.Model\Sporthub.Model.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Sporthub.Services" Source="Sporthub.Services\Sporthub.Services.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Sporthub.Services" Source="Sporthub.Services\Sporthub.Services.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Sporthub.Utils" Source="Sporthub.Utilities\Sporthub.Utils.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Sporthub.Utils" Source="Sporthub.Utilities\Sporthub.Utils.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Sporthub.Mvc" Source="Sporthub.Mvc\Sporthub.Mvc.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Sporthub.Mvc" Source="Sporthub.Mvc\Sporthub.Mvc.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Sporthub.Data" Source="Sporthub.Data\Sporthub.Data.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Sporthub.Data" Source="Sporthub.Data\Sporthub.Data.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Sporthub.Fix" Source="Sporthub.Fix\Sporthub.Fix.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Sporthub.Fix" Source="Sporthub.Fix\Sporthub.Fix.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="References" Source="References\References.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="References" Source="References\References.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="facebook.Linq" Source="facebook.Linq\facebook.Linq.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="facebook.Linq" Source="facebook.Linq\facebook.Linq.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Sporthub.Admin" Source="Sporthub.Admin\Sporthub.Admin.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Sporthub.Admin" Source="Sporthub.Admin\Sporthub.Admin.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="Sporthub.Mvc" Source="Sporthub.Mvc\Sporthub.Mvc.csproj" Description="">
+</Event><Event ErrorLevel="0" Project="" Source="Sporthub.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Sporthub.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Sporthub.Repository" Source="Sporthub.Repository\Sporthub.Repository.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Sporthub.Model" Source="Sporthub.Model\Sporthub.Model.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Sporthub.Services" Source="Sporthub.Services\Sporthub.Services.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Sporthub.Utils" Source="Sporthub.Utilities\Sporthub.Utils.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Sporthub.Data" Source="Sporthub.Data\Sporthub.Data.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Sporthub.Fix" Source="Sporthub.Fix\Sporthub.Fix.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="References" Source="References\References.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="facebook.Linq" Source="facebook.Linq\facebook.Linq.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Sporthub.Admin" Source="Sporthub.Admin\Sporthub.Admin.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

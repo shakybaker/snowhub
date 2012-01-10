@@ -3,3 +3,8 @@ C:\Sandpit\Sporthub\trunk\Sporthub\References\bin\Release\References.pdb
 C:\Sandpit\Sporthub\trunk\Sporthub\References\obj\Release\ResolveAssemblyReference.cache
 C:\Sandpit\Sporthub\trunk\Sporthub\References\obj\Release\References.dll
 C:\Sandpit\Sporthub\trunk\Sporthub\References\obj\Release\References.pdb
+C:\Sandpit\Snowhub\References\bin\Release\References.dll
+C:\Sandpit\Snowhub\References\bin\Release\References.pdb
+C:\Sandpit\Snowhub\References\obj\Release\ResolveAssemblyReference.cache
+C:\Sandpit\Snowhub\References\obj\Release\References.dll
+C:\Sandpit\Snowhub\References\obj\Release\References.pdb

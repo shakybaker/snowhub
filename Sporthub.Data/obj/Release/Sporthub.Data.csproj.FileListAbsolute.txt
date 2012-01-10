@@ -5,3 +5,10 @@ C:\Sandpit\Sporthub\trunk\Sporthub\Sporthub.Data\bin\Release\Sporthub.Model.pdb
 C:\Sandpit\Sporthub\trunk\Sporthub\Sporthub.Data\obj\Release\ResolveAssemblyReference.cache
 C:\Sandpit\Sporthub\trunk\Sporthub\Sporthub.Data\obj\Release\Sporthub.Data.dll
 C:\Sandpit\Sporthub\trunk\Sporthub\Sporthub.Data\obj\Release\Sporthub.Data.pdb
+C:\Sandpit\Snowhub\Sporthub.Data\bin\Release\Sporthub.Data.dll
+C:\Sandpit\Snowhub\Sporthub.Data\bin\Release\Sporthub.Data.pdb
+C:\Sandpit\Snowhub\Sporthub.Data\bin\Release\Sporthub.Model.dll
+C:\Sandpit\Snowhub\Sporthub.Data\bin\Release\Sporthub.Model.pdb
+C:\Sandpit\Snowhub\Sporthub.Data\obj\Release\ResolveAssemblyReference.cache
+C:\Sandpit\Snowhub\Sporthub.Data\obj\Release\Sporthub.Data.dll
+C:\Sandpit\Snowhub\Sporthub.Data\obj\Release\Sporthub.Data.pdb
