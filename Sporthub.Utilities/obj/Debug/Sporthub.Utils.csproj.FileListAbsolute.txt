@@ -1,0 +1,14 @@
+C:\Development\Sporthub\trunk\Sporthub\Sporthub.Utilities\bin\Debug\Sporthub.Utilities.dll
+C:\Development\Sporthub\trunk\Sporthub\Sporthub.Utilities\bin\Debug\Sporthub.Utilities.pdb
+C:\Development\Sporthub\trunk\Sporthub\Sporthub.Utilities\bin\Debug\Sporthub.Model.dll
+C:\Development\Sporthub\trunk\Sporthub\Sporthub.Utilities\bin\Debug\Sporthub.Model.pdb
+C:\Development\Sporthub\trunk\Sporthub\Sporthub.Utilities\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Sporthub\trunk\Sporthub\Sporthub.Utilities\obj\Debug\Sporthub.Utilities.dll
+C:\Development\Sporthub\trunk\Sporthub\Sporthub.Utilities\obj\Debug\Sporthub.Utilities.pdb
+C:\Sandpit\Sporthub\trunk\Sporthub\Sporthub.Utilities\bin\Debug\Sporthub.Utilities.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\Sporthub.Utilities\bin\Debug\Sporthub.Utilities.pdb
+C:\Sandpit\Sporthub\trunk\Sporthub\Sporthub.Utilities\bin\Debug\Sporthub.Model.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\Sporthub.Utilities\bin\Debug\Sporthub.Model.pdb
+C:\Sandpit\Sporthub\trunk\Sporthub\Sporthub.Utilities\obj\Debug\ResolveAssemblyReference.cache
+C:\Sandpit\Sporthub\trunk\Sporthub\Sporthub.Utilities\obj\Debug\Sporthub.Utilities.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\Sporthub.Utilities\obj\Debug\Sporthub.Utilities.pdb

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GetResortsClustered.aspx.cs" Inherits="Sporthub.Web.Shared.Ajax.GetResortsClustered" %>

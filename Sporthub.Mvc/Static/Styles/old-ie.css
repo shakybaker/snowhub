@@ -1,0 +1,11 @@
+﻿ul.list1 li a span.rating-score-sm
+{
+	margin: -20px 3px 0 0;
+    float: right;
+}
+
+span.counter
+{
+	margin: -20px 3px 0 0;
+    float: right;
+}

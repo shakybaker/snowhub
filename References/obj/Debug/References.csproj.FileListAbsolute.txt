@@ -1,0 +1,10 @@
+C:\Development\Sporthub\trunk\Sporthub\References\bin\Debug\References.dll
+C:\Development\Sporthub\trunk\Sporthub\References\bin\Debug\References.pdb
+C:\Development\Sporthub\trunk\Sporthub\References\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Sporthub\trunk\Sporthub\References\obj\Debug\References.dll
+C:\Development\Sporthub\trunk\Sporthub\References\obj\Debug\References.pdb
+C:\Sandpit\Sporthub\trunk\Sporthub\References\bin\Debug\References.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\References\bin\Debug\References.pdb
+C:\Sandpit\Sporthub\trunk\Sporthub\References\obj\Debug\ResolveAssemblyReference.cache
+C:\Sandpit\Sporthub\trunk\Sporthub\References\obj\Debug\References.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\References\obj\Debug\References.pdb

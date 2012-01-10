@@ -1,0 +1,83 @@
+﻿/*div.pod
+{
+	background-color: #242424;
+    background-image: none;
+}
+div.grid_3 div.headwrap,
+div.grid_4 div.headwrap
+{
+	background-color: #2f2f2f;
+    background-image: none;
+}
+*/
+/*
+ul.list1 li a span.rating-score-sm
+{
+	margin: 4px 3px 0 0;
+}
+
+span.counter
+{
+	margin: 4px 3px 0 0;
+}
+div.podIn,
+div.pod div.podbtm
+{
+	background-color: #1B1B1B;
+}
+div.headwrap
+{
+	background-color: #1C1C1C;
+}
+.grid_3 div.headwrap
+{
+    background: #1C1C1C url(/Static/Images/IE/bg-pod-head-3col.png) 0 0 repeat-x;
+}
+.grid_3 div.pod div.podbtm
+{
+    background: #242424 url(/Static/Images/IE/bg-pod-btm-3col.png) 0 0 repeat-x;
+}
+.grid_4 div.headwrap
+{
+    background: #1C1C1C url(/Static/Images/IE/bg-pod-head-4col.png) 0 0 repeat-x;
+}
+.grid_4 div.pod div.podbtm
+{
+    background: #242424 url(/Static/Images/IE/bg-pod-btm-4col.png) 0 0 repeat-x;
+}
+label.marker .checkbox
+{
+	display: inline;
+}
+ul.list3 li div.r-bottom 
+{
+    background-color:#101010;
+}
+.callout.business {
+    background-color:#398200;
+}
+*/
+
+label.marker
+{
+	cursor: auto;
+}
+
+label.marker .checkbox
+{
+	display: inline;
+}
+
+label.marker.off span,
+label.marker.on span.resorts,
+label.marker.on span.webcams,
+label.marker.on span.flickr,
+label.marker.on span.panoramio,
+label.marker.on span.wikipedia,
+label.marker.on span.youtube
+{
+    background-image: none;
+}
+#Footer {
+	background:url("/static/images/bg-footer.png") no-repeat scroll 0 100% #222222;
+}

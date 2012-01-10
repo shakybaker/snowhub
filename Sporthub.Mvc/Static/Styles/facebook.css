@@ -1,0 +1,47 @@
+﻿@charset "utf-8";
+/* FB Fan Rev 2 */
+
+.fan_box { font-size: 13px; font-family: Arial, Sans-Serif; color: #FFFFFF; }
+
+.fan_box .full_widget { border: none; background:none; }
+
+.fan_box .full_widget .connect_top { color: #fff; border: none; background-color: #2b2f2e; }
+
+.fan_box .connect_action .name { font-size:14px; }
+
+.fan_box .connections_grid .grid_item a:link,
+.fan_box .connections_grid .grid_item a:visited,
+.connect_top a:link,
+.connect_top a:visited
+{
+    font-weight: normal;
+    text-decoration: none;
+    color: #93bce5;
+    background-color: transparent;
+}
+.fan_box .connections_grid .grid_item a:hover,
+.fan_box .connections_grid .grid_item a:active,
+.connect_top a:hover,
+.connect_top a:active
+{
+    font-weight: normal;
+    text-decoration: none;
+    color: #fff;
+    background-color: #217CD7;
+}
+
+.fan_box
+.connections {
+	color: #acacac; 
+	border: none; 
+	background: #232323 url('www.thesnowhub.com/Static/Images/test/bg-pod.png') 0 0 repeat-x;
+	font-size:12px;
+}
+.fan_box
+.connections .total {
+	font-weight:bold; 
+	font-size:16px;
+}
+.fan_box .connections_grid .grid_item .name { 
+	font-size:11px;
+}

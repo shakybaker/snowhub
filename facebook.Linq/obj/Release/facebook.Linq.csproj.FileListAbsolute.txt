@@ -1,0 +1,7 @@
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\bin\Release\facebook.Linq.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\bin\Release\facebook.Linq.pdb
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\bin\Release\facebook.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\bin\Release\Microsoft.Xml.Schema.Linq.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\obj\Release\ResolveAssemblyReference.cache
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\obj\Release\facebook.Linq.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\obj\Release\facebook.Linq.pdb

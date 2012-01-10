@@ -1,0 +1,14 @@
+C:\Development\Sporthub\trunk\Sporthub\facebook.Linq\bin\Debug\facebook.Linq.dll
+C:\Development\Sporthub\trunk\Sporthub\facebook.Linq\bin\Debug\facebook.Linq.pdb
+C:\Development\Sporthub\trunk\Sporthub\facebook.Linq\bin\Debug\facebook.dll
+C:\Development\Sporthub\trunk\Sporthub\facebook.Linq\bin\Debug\Microsoft.Xml.Schema.Linq.dll
+C:\Development\Sporthub\trunk\Sporthub\facebook.Linq\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Sporthub\trunk\Sporthub\facebook.Linq\obj\Debug\facebook.Linq.dll
+C:\Development\Sporthub\trunk\Sporthub\facebook.Linq\obj\Debug\facebook.Linq.pdb
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\bin\Debug\facebook.Linq.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\bin\Debug\facebook.Linq.pdb
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\bin\Debug\facebook.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\bin\Debug\Microsoft.Xml.Schema.Linq.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\obj\Debug\ResolveAssemblyReference.cache
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\obj\Debug\facebook.Linq.dll
+C:\Sandpit\Sporthub\trunk\Sporthub\facebook.Linq\obj\Debug\facebook.Linq.pdb

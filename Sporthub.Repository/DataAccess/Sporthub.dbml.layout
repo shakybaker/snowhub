@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 26, 37.75" name="Sporthub">
+  <DataContextMoniker Name="/SporthubDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2dc2b699-cf8b-4849-a753-580bb6864060" absoluteBounds="0.75, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/SporthubDataContext/UserSocialNetwork" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2a56a23b-1f5a-4c3b-84b4-b1751e304bd5" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="726d6f45-0b03-481e-865c-87698e48f8a5" absoluteBounds="6.25, 11.625, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/SporthubDataContext/CheckIn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f7a5933a-4e9e-4328-9258-1cd91233a6a2" absoluteBounds="6.265, 12.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a31bca3a-2617-45f7-9a16-2b96e1fe10c3" absoluteBounds="11.75, 0.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SporthubDataContext/CodeDecode" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8587a28-440c-4783-981b-66a5bbb09b83" absoluteBounds="11.765, 1.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3d5a4c0-a348-4754-ab72-4208577c5219" absoluteBounds="0.75, 2.75, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/SporthubDataContext/ConfigBoardBindingType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a677098f-af9d-4031-af37-35449e407fcb" absoluteBounds="0.765, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="58eedaa2-1dfa-455f-bdcd-a905bbea9bf7" absoluteBounds="3.75, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/SporthubDataContext/ConfigCuisine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ba4d201-d27c-4a95-9394-8fcec794bcad" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d43edfda-ca45-4029-b690-16bacfdd9a13" absoluteBounds="6.75, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/SporthubDataContext/ConfigManufacturerType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e111a02-3705-4f69-ab66-ebe7da49946e" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57430e05-48e6-4674-b268-63456d5f05de" absoluteBounds="11.75, 4.75, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/SporthubDataContext/ConfigPostStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="968cdac6-30fd-4eb8-ad1a-59d333bb7050" absoluteBounds="11.765, 5.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24e861ac-edaa-4de5-b755-66b11a29298c" absoluteBounds="11.75, 6.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/SporthubDataContext/ConfigResortLinkType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7a74244-8f6b-4336-9836-4e9eb2432716" absoluteBounds="11.765, 7.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bea7f77b-18b9-4b72-9fa6-f06f4df00c33" absoluteBounds="6.5, 3.375, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/SporthubDataContext/ConfigSportType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b85e2a9b-affc-4739-8359-69230d61ef9a" absoluteBounds="6.515, 3.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6e154a52-f6fb-4073-b724-1fe182b5c846" absoluteBounds="11.75, 9.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/SporthubDataContext/ConfigThreadStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fdd95b6e-1ca4-451a-944f-e3c4949ba71a" absoluteBounds="11.765, 10.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1908c4b7-1989-4dca-899a-ef36c11dd332" absoluteBounds="3.75, 25.125, 2, 2.9247054036458344">
+      <DataClassMoniker Name="/SporthubDataContext/Continent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e7726a80-612c-40f5-80f3-65c9cf2413b2" absoluteBounds="3.765, 25.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc3ad87a-3e6f-46c5-bf4c-9ce5e0619270" absoluteBounds="4, 30.375, 2, 5.809226888020838">
+      <DataClassMoniker Name="/SporthubDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0eb7ceb1-1ac7-4208-ae0d-7c94f047f190" absoluteBounds="4.0150000000000006, 30.835, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8517d498-c509-4d3b-ac75-8ed7ac10bd36" absoluteBounds="3.5, 5.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SporthubDataContext/Forum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8f042128-17f2-412b-8eed-b25759e9b561" absoluteBounds="3.515, 5.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b87c7326-7b4f-494f-ab2d-d22d3fc75ce1" absoluteBounds="11.75, 11.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/SporthubDataContext/LinkManufacturerManufacturerType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1f96b9d-52b9-40a6-9e3c-896b65a4e37b" absoluteBounds="11.765, 12.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90483776-adf5-4275-a046-4c811f3b0353" absoluteBounds="14.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SporthubDataContext/LinkResortMountainRange" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8eafb97-3dc2-461c-a27e-0d4749af8e9e" absoluteBounds="14.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d70a78a1-74a3-4d1f-8930-3b00990b29ae" absoluteBounds="14.75, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SporthubDataContext/LinkResortPicture" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db4a7f74-5266-422e-92c8-896440440406" absoluteBounds="14.765, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84cee3db-5a3d-44a7-8431-2c0a15f71326" absoluteBounds="14.75, 6.75, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/SporthubDataContext/LinkResortProCon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87c86012-7421-4ca2-b784-7a897e107458" absoluteBounds="14.765, 7.21, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6ebfaa9e-d95a-48e6-954a-8637e07ee967" absoluteBounds="14.75, 10.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SporthubDataContext/LinkResortRegion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13ad4471-764b-4c24-915a-2be3dea68ec8" absoluteBounds="14.765, 11.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c6756a9c-b80f-45ad-90f7-ed13463394be" absoluteBounds="11.75, 14.75, 2, 2.15549967447917">
+      <DataClassMoniker Name="/SporthubDataContext/LinkResortSkiArea" />
+      <nestedChildShapes>
+        <elementListCompartment Id="300bb1d4-fdc2-49c9-8510-70ff52fa7bfd" absoluteBounds="11.765, 15.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29d2489f-2d0f-4c41-9d88-31fb915c3856" absoluteBounds="14.75, 13.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SporthubDataContext/LinkResortThread" />
+      <nestedChildShapes>
+        <elementListCompartment Id="acad305c-1692-4f33-9728-76a1b9a80c57" absoluteBounds="14.765, 14.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e549c4c-f937-445e-be8a-d140bd366e72" absoluteBounds="9.25, 3.125, 2, 7.5399397786458326">
+      <DataClassMoniker Name="/SporthubDataContext/LinkResortUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b8d7133-9693-40f6-8c99-9d050cf63cdb" absoluteBounds="9.265, 3.585, 1.9700000000000002, 6.979939778645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e6c84ea-85fb-44a1-a8f6-b9245187d580" absoluteBounds="14.75, 16.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/SporthubDataContext/LinkSkiAreaCountry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7145c67f-5f50-43d0-9df5-041cc5f8dab6" absoluteBounds="14.765, 17.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="250600dc-7523-45d3-8f40-56bf32cb3b2e" absoluteBounds="9.25, 11.625, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/SporthubDataContext/LinkUserSportType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8abd031b-df06-4dee-96a3-4e5e3a87a300" absoluteBounds="9.265, 12.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1ef38866-d0b5-44d3-9f33-f6e54e5db98c" absoluteBounds="17.75, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/SporthubDataContext/LinkUserUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c93c162-9ed1-49e5-826f-f574478dc117" absoluteBounds="17.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb86d881-a94e-4314-83fe-fb47668faf8d" absoluteBounds="0.75, 17.75, 2, 3.30930826822917">
+      <DataClassMoniker Name="/SporthubDataContext/Manufacturer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="223cd475-cc7e-41cb-9822-dbcccc1423d2" absoluteBounds="0.765, 18.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57e30c08-1534-423a-8ea2-3f0e244af249" absoluteBounds="17.75, 2.75, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/SporthubDataContext/MountainRange" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ffdfc057-e275-40ad-8904-3887832c4a49" absoluteBounds="17.765, 3.21, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f76db6a-154d-437f-b7f2-6df958f2b952" absoluteBounds="17.75, 6.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/SporthubDataContext/NewsFeed" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ff24231-ab78-4ea7-9874-bd69f8bed00c" absoluteBounds="17.765, 7.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a6cbbd2-9172-4aeb-90c4-0371ed33c526" absoluteBounds="17.75, 10.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SporthubDataContext/Picture" />
+      <nestedChildShapes>
+        <elementListCompartment Id="afcd8647-634c-4fe5-b020-1358d1ad2755" absoluteBounds="17.765, 11.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="346bf67b-7baf-4fd1-b275-ff76e22e97a8" absoluteBounds="9, 15.375, 2, 2.9247054036458344">
+      <DataClassMoniker Name="/SporthubDataContext/Post" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0cb1f0f9-5871-4d65-b98a-6242af43bc7b" absoluteBounds="9.015, 15.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f76b66b-e63a-478a-ac12-7780f6b5e95e" absoluteBounds="17.75, 14.75, 2, 2.15549967447917">
+      <DataClassMoniker Name="/SporthubDataContext/ProCon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fbdc0f71-de08-48b9-8c10-99b7de7957d1" absoluteBounds="17.765, 15.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f8dd91ac-7c4a-45f1-a1c0-e64883d17887" absoluteBounds="17.75, 17.75, 2, 2.9247054036458344">
+      <DataClassMoniker Name="/SporthubDataContext/Region" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c7d230f-184e-46fd-9c34-8fdaa7f5c444" absoluteBounds="17.765, 18.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa4cef38-027f-4b1a-bdee-7bee748a08c1" absoluteBounds="6.5, 22.5, 2, 15.039695638020838">
+      <DataClassMoniker Name="/SporthubDataContext/Resort" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1e7ec7f-6e83-4248-bc27-dcaa49b5baf0" absoluteBounds="6.515, 22.96, 1.9700000000000002, 14.479695638020832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="44b70460-ee59-49bc-86b1-7d33eca7b4e7" absoluteBounds="9.75, 19.75, 2, 2.15549967447917">
+      <DataClassMoniker Name="/SporthubDataContext/ResortAlia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f51279a5-dd39-4bcf-b191-c9197888746a" absoluteBounds="9.765, 20.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3eda3d47-4386-443b-8558-2a9386f6c7a9" absoluteBounds="12.75, 19.75, 2, 2.73240397135417">
+      <DataClassMoniker Name="/SporthubDataContext/ResortLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8ac2249-e756-46a1-99cc-3b791e9b5926" absoluteBounds="12.765, 20.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="69adb8c6-2dee-4618-844f-2c021d482f44" absoluteBounds="20.75, 0.75, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/SporthubDataContext/ResortRating" />
+      <nestedChildShapes>
+        <elementListCompartment Id="95801c74-a720-4f38-9e62-b654f46933bb" absoluteBounds="20.765, 1.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c81f2d7c-d15b-4ff1-bb53-08b72a682ba8" absoluteBounds="20.75, 5.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SporthubDataContext/ResortReview" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e92c8aef-b02b-4d54-9356-0e9bef2c87ca" absoluteBounds="20.765, 6.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f236987f-89f1-48b2-8973-3fc1e067932a" absoluteBounds="9.25, 23.125, 2, 13.501284179687502">
+      <DataClassMoniker Name="/SporthubDataContext/ResortStat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b94b2916-1623-4e03-be7c-1fb0b445f3b2" absoluteBounds="9.265, 23.585, 1.9700000000000002, 12.9412841796875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5e8805b-151e-46f3-9466-6dafe7fd0adf" absoluteBounds="20.75, 9.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SporthubDataContext/ResortTouristOffice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ecfee88-0d0d-4503-80ba-4a7f5d7fb5f0" absoluteBounds="20.765, 10.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="428d0569-ebd9-43f5-ba45-65f5354af34f" absoluteBounds="20.75, 13.75, 2, 5.2323225911458344">
+      <DataClassMoniker Name="/SporthubDataContext/RestaurantBar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4c39be1-aafc-422e-a796-fdbe2c6a616e" absoluteBounds="20.765, 14.21, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ea1d7c3-74a5-4c26-8c1f-161138500be3" absoluteBounds="20.75, 19.75, 2, 7.5399397786458344">
+      <DataClassMoniker Name="/SporthubDataContext/ScrapeResortStat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5bffe215-87cc-4aca-b7e0-ab8c8553ae72" absoluteBounds="20.765, 20.21, 1.9700000000000002, 6.979939778645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ea8fc6c-25c5-4a4a-9f8a-f8fdbb2ad037" absoluteBounds="15.75, 21.75, 2, 2.73240397135417">
+      <DataClassMoniker Name="/SporthubDataContext/Service" />
+      <nestedChildShapes>
+        <elementListCompartment Id="722d705d-791a-457c-ba3a-9f11b6417687" absoluteBounds="15.765, 22.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b45b10c-570b-4358-8fa6-81dd530b86ef" absoluteBounds="23.75, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/SporthubDataContext/SkiArea" />
+      <nestedChildShapes>
+        <elementListCompartment Id="148529ce-e829-47ad-9361-50e0fd83004f" absoluteBounds="23.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ad5bed2a-385f-4f38-b4bd-e896cbf5f278" absoluteBounds="23.75, 3.75, 2, 3.1170068359374996">
+      <DataClassMoniker Name="/SporthubDataContext/SkiBoardModel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="726b1c86-cb8b-4a2e-b389-6743251e2280" absoluteBounds="23.765, 4.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="be04be0b-7c69-4482-9ad7-0ceba121ac63" absoluteBounds="6.25, 7.25, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/SporthubDataContext/Thread" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd174d05-eba7-4925-bc7d-59909617ed28" absoluteBounds="6.265, 7.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4f9d340-cb94-40a7-9b2d-069da34a8f83" absoluteBounds="0.75, 11.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SporthubDataContext/UserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1fb81246-c643-4a91-bd7b-6db3263d4df4" absoluteBounds="0.765, 11.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.28125 : 28.0497054036458); (5.28125 : 30.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/Continent/Continent_Country" />
+      <nodes>
+        <classShapeMoniker Id="1908c4b7-1989-4dca-899a-ef36c11dd332" />
+        <classShapeMoniker Id="fc3ad87a-3e6f-46c5-bf4c-9ce5e0619270" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 6.29970540364583); (8.875 : 6.67470540364583); (8.875 : 12.8950512695312); (9.25 : 12.8950512695312)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/ConfigSportType/ConfigSportType_LinkUserSportType" />
+      <nodes>
+        <classShapeMoniker Id="bea7f77b-18b9-4b72-9fa6-f06f4df00c33" />
+        <classShapeMoniker Id="250600dc-7523-45d3-8f40-56bf32cb3b2e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.477540375 : 22.5); (7.477540375 : 14.1651025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/Resort/Resort_CheckIn" />
+      <nodes>
+        <classShapeMoniker Id="aa4cef38-027f-4b1a-bdee-7bee748a08c1" />
+        <classShapeMoniker Id="726d6f45-0b03-481e-865c-87698e48f8a5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.0200221875 : 22.5); (8.0200221875 : 14.4151025390625); (8.5 : 14.4151025390625); (8.5 : 8.51357459114583); (8.79166666666667 : 8.51357459114583 : JumpStart); (8.95833333333333 : 8.51357459114583 : JumpEnd); (9.25 : 8.51357459114583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/Resort/Resort_LinkResortUser" />
+      <nodes>
+        <classShapeMoniker Id="aa4cef38-027f-4b1a-bdee-7bee748a08c1" />
+        <classShapeMoniker Id="9e549c4c-f937-445e-be8a-d140bd366e72" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 26.5873527018229); (5.82291666666667 : 26.5873527018229 : JumpStart); (5.98958333333333 : 26.5873527018229 : JumpEnd); (6.5 : 26.5873527018229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/Continent/Continent_Resort" />
+      <nodes>
+        <classShapeMoniker Id="1908c4b7-1989-4dca-899a-ef36c11dd332" />
+        <classShapeMoniker Id="aa4cef38-027f-4b1a-bdee-7bee748a08c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6 : 33.2796134440104); (6.5 : 33.2796134440104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/Country/Country_Resort" />
+      <nodes>
+        <classShapeMoniker Id="fc3ad87a-3e6f-46c5-bf4c-9ce5e0619270" />
+        <classShapeMoniker Id="aa4cef38-027f-4b1a-bdee-7bee748a08c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 29.8756420898438); (9.25 : 29.8756420898438)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/Resort/Resort_ResortStat" />
+      <nodes>
+        <classShapeMoniker Id="aa4cef38-027f-4b1a-bdee-7bee748a08c1" />
+        <classShapeMoniker Id="f236987f-89f1-48b2-8973-3fc1e067932a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 10.3670068359375); (8.44107443490112 : 10.5580812708386 : JumpStart); (8.55892556509888 : 10.6759324010364 : JumpEnd); (8.625 : 10.7420068359375); (8.625 : 16.8373527018229); (9 : 16.8373527018229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/Thread/Thread_Post" />
+      <nodes>
+        <classShapeMoniker Id="be04be0b-7c69-4482-9ad7-0ceba121ac63" />
+        <classShapeMoniker Id="346bf67b-7baf-4fd1-b275-ff76e22e97a8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.74120198567708); (5.54166416666667 : 7.74120198567708 : JumpStart); (5.70833083333333 : 7.74120198567708 : JumpEnd); (6.25 : 7.74120198567708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/Forum/Forum_Thread" />
+      <nodes>
+        <classShapeMoniker Id="8517d498-c509-4d3b-ac75-8ed7ac10bd36" />
+        <classShapeMoniker Id="be04be0b-7c69-4482-9ad7-0ceba121ac63" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f9265429-1152-415f-ac2e-563b41f35ff5" absoluteBounds="5, 18.625, 2, 3.30930826822917">
+      <DataClassMoniker Name="/SporthubDataContext/Activity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f90a5927-4aa8-497a-9e3b-e50ec6dd5c4c" absoluteBounds="5.015, 19.085, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="abb3f8af-42c8-4fbe-9c53-47825e3ee984" absoluteBounds="3.75, 10.375, 2, 7.7322412109375023">
+      <DataClassMoniker Name="/SporthubDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c8d4178-563a-4a46-a94b-a64db2d4ac5c" absoluteBounds="3.765, 10.835, 1.9700000000000002, 7.1722412109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 12.7030575300753); (6.25 : 12.7030575300753)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/User/User_CheckIn" />
+      <nodes>
+        <classShapeMoniker Id="abb3f8af-42c8-4fbe-9c53-47825e3ee984" />
+        <classShapeMoniker Id="726d6f45-0b03-481e-865c-87698e48f8a5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 13.9148064288404); (6 : 13.9148064288404); (6 : 11.375); (8.41666666666667 : 11.375 : JumpStart); (8.58333333333333 : 11.375 : JumpEnd); (8.79166666666667 : 11.375 : JumpStart); (8.95833333333333 : 11.375 : JumpEnd); (10.25 : 11.375); (10.25 : 9.33012616147598)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/User/User_LinkResortUser" />
+      <nodes>
+        <classShapeMoniker Id="abb3f8af-42c8-4fbe-9c53-47825e3ee984" />
+        <classShapeMoniker Id="9e549c4c-f937-445e-be8a-d140bd366e72" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 11.0312515); (11.15625 : 11.0312515); (11.15625 : 13.7811150601506)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/User/User_LinkUserSportType" />
+      <nodes>
+        <classShapeMoniker Id="abb3f8af-42c8-4fbe-9c53-47825e3ee984" />
+        <classShapeMoniker Id="250600dc-7523-45d3-8f40-56bf32cb3b2e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 10.375); (6.25 : 9.87330864876509)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/User/User_Thread" />
+      <nodes>
+        <classShapeMoniker Id="abb3f8af-42c8-4fbe-9c53-47825e3ee984" />
+        <classShapeMoniker Id="be04be0b-7c69-4482-9ad7-0ceba121ac63" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 10.375); (6.25 : 9.87330864876509)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/User/User_Thread1" />
+      <nodes>
+        <classShapeMoniker Id="abb3f8af-42c8-4fbe-9c53-47825e3ee984" />
+        <classShapeMoniker Id="be04be0b-7c69-4482-9ad7-0ceba121ac63" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.375 : 16.7358573576808); (5.375 : 18.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/User/User_Activity" />
+      <nodes>
+        <classShapeMoniker Id="abb3f8af-42c8-4fbe-9c53-47825e3ee984" />
+        <classShapeMoniker Id="f9265429-1152-415f-ac2e-563b41f35ff5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 12.6559231281777); (3.75 : 12.6559231281777)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/UserRole/UserRole_User" />
+      <nodes>
+        <classShapeMoniker Id="f4f9d340-cb94-40a7-9b2d-069da34a8f83" />
+        <classShapeMoniker Id="abb3f8af-42c8-4fbe-9c53-47825e3ee984" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b0601f8a-54cd-4f1d-b4bb-9ed7baaa96c2" absoluteBounds="0.5, 23.875, 2, 4.0785139973958344">
+      <DataClassMoniker Name="/SporthubDataContext/Airport" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5575c346-c82c-4faa-baf2-529200ff32fd" absoluteBounds="0.51500000000000012, 24.335, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.75 : 26.5392569986979); (2.5 : 26.5392569986979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SporthubDataContext/Continent/Continent_Airport" />
+      <nodes>
+        <classShapeMoniker Id="1908c4b7-1989-4dca-899a-ef36c11dd332" />
+        <classShapeMoniker Id="b0601f8a-54cd-4f1d-b4bb-9ed7baaa96c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.90625 : 30.375); (5.90625 : 24.46875); (2.5 : 24.46875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SporthubDataContext/Country/Country_Airport" />
+      <nodes>
+        <classShapeMoniker Id="fc3ad87a-3e6f-46c5-bf4c-9ce5e0619270" />
+        <classShapeMoniker Id="b0601f8a-54cd-4f1d-b4bb-9ed7baaa96c2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ce08f7a4-ad9a-4449-933a-4967b2c56b4b" absoluteBounds="1.375, 4.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SporthubDataContext/ReviewUsefulness" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed766251-6125-4d93-a719-5f35378d450f" absoluteBounds="1.3900000000000001, 5.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.375 : 4.87621330413662); (3.75 : 4.50121330413662); (3.75 : 2.75); (8.875 : 2.75); (9.25 : 3.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/ReviewUsefulness/ReviewUsefulness_LinkResortUser" />
+      <nodes>
+        <classShapeMoniker Id="ce08f7a4-ad9a-4449-933a-4967b2c56b4b" />
+        <classShapeMoniker Id="9e549c4c-f937-445e-be8a-d140bd366e72" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.6249975 : 10.375); (5.6249975 : 5.18810915206831); (3.375 : 5.18810915206831)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SporthubDataContext/User/User_ReviewUsefulness" />
+      <nodes>
+        <classShapeMoniker Id="abb3f8af-42c8-4fbe-9c53-47825e3ee984" />
+        <classShapeMoniker Id="ce08f7a4-ad9a-4449-933a-4967b2c56b4b" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

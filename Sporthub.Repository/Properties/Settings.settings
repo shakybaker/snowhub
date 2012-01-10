@@ -1,0 +1,46 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sporthub.Repository.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="sandpitConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=213.175.193.168;Initial Catalog=thesnowhub;Persist Security Info=True;User ID=hasselhof;Password=anewstart2008&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=213.175.193.168;Initial Catalog=thesnowhub;Persist Security Info=True;User ID=hasselhof;Password=anewstart2008</Value>
+    </Setting>
+    <Setting Name="SQL2005_615410_sporthubConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=tcp:esql2k501.discountasp.net;Initial Catalog=SQL2005_615410_sporthub;Persist Security Info=True;User ID=SQL2005_615410_sporthub_user;Password=first2009&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=tcp:esql2k501.discountasp.net;Initial Catalog=SQL2005_615410_sporthub;Persist Security Info=True;User ID=SQL2005_615410_sporthub_user;Password=first2009</Value>
+    </Setting>
+    <Setting Name="SQL2005_615410_sporthubConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=localhost;Initial Catalog=SQL2005_615410_sporthub;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=localhost;Initial Catalog=SQL2005_615410_sporthub;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="SQL2005_615410_sporthubConnectionString2" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=esql2k501.discountasp.net;Initial Catalog=SQL2005_615410_sporthub;Persist Security Info=True;User ID=SQL2005_615410_sporthub_user;Password=first2010&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=esql2k501.discountasp.net;Initial Catalog=SQL2005_615410_sporthub;Persist Security Info=True;User ID=SQL2005_615410_sporthub_user;Password=first2010</Value>
+    </Setting>
+    <Setting Name="sporthubConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=NH-LAPTOP-120;Initial Catalog=sporthub;Persist Security Info=True;User ID=sporthubuser;Password=first2010&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=NH-LAPTOP-120;Initial Catalog=sporthub;Persist Security Info=True;User ID=sporthubuser;Password=first2010</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,383 @@
+﻿
+/* ====== * ============================== */
+*, td, th
+{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 13px;
+    color: #358;
+    z-index: 0;
+}
+body
+{
+    padding: 0 0 40px 0;
+    background: #E5E3DB url(/Static/Images/bgBanner.png) 0 0 repeat-x;
+}
+.cb
+{
+    clear: both;
+}
+.cl
+{
+    clear: left;
+}
+.fr
+{
+    float: right;
+}
+.fl
+{
+    float: left;
+}
+/* ====== TAGS ============================== */
+p
+{
+    margin: 10px 0 0 0;
+}
+h2
+{
+    color: #358;
+    font-size: 140%;
+    padding: 0;
+    line-height: 48px;
+    float: left;
+    margin: 15px 0 0 5px;
+}
+h3
+{
+    height: 25px;
+    color: #c5e0fc;
+    font-weight: bold;
+    font-size: 110%;
+    padding: 0 0 0 10px;
+    background-color: #FCF9F2;
+    border-bottom: 2px solid #DDD;
+}
+fieldset
+{
+    border: 0 none;
+}
+input,
+select
+{
+    padding: 4px;
+    border:1px solid #CCCAC3;
+    font-size:1.3333em;
+}
+input,
+option
+{
+    color: #666;
+}
+select
+{
+    padding: 1px 0 1px 2px;
+    border-top: 1px solid #AAA;
+    border-left: 1px solid #AAA;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+
+/* ====== STYLED TAGS ============================== */
+#MainHeader h1
+{
+    height: 50px;
+    width: 124px;
+    text-indent: -5000px;
+    float: left;
+    margin: 32px 0 0 0;
+    background: transparent url(/Static/Images/snowhub.png) 0 0 no-repeat;
+}
+h2#PageHeading
+{
+    color: #358;
+    font-size: 120%;
+    padding: 0;
+    line-height: 20px;
+    margin: 10px;
+    width: 280px;
+}
+input.250
+{
+    width: 250px;
+}
+
+/* ====== LINKS ============================== */
+
+/* ====== NAVIGATION ============================== */
+
+/* ------ tab navigation ------------------------ */
+.menuTabs
+{
+    z-index: 90;
+    height: 23px;
+}
+.mainNav
+{
+    float: right;
+    clear: right;
+    height: 30px;
+    margin: 7px 10px 0 0;
+}
+.tabNav
+{
+    margin: 0 0 0 -10px;
+    padding: 8px 0 0 0;
+}
+.tab
+{
+    display: block;
+    float: left;
+}
+.tab a
+{
+    display: block;
+    height: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tab a:link,
+.tab a:visited
+{
+    border: 0 none;
+    margin: 0 5px 0 0;
+    background-color: #BBD9F7;
+}
+.mainNav .tab a:link,
+.mainNav .tab a:visited
+{
+    border-bottom-width: 0;
+    background-color: #217cd7;
+}
+.tab a:link span,
+.tab a:visited span
+{
+    color: #1f6ebe;
+    padding: 6px 15px 0 15px;
+    display: block;
+}
+.mainNav .tab a:link span,
+.mainNav .tab a:visited span
+{
+    color: #FFF;
+}
+.tab a:hover,
+.tab a:active
+{
+    background-color: #1f6ebe;
+}
+.mainNav .tab a:hover,
+.mainNav .tab a:active
+{
+    border-bottom-width: 0;
+    background-color: #c5e0fc;
+}
+.tab a:hover span,
+.tab a:active span
+{
+    color: #FFF;
+    display: block;
+}
+.mainNav .tab a:hover span,
+.mainNav .tab a:active span
+{
+    color: #1f6ebe;
+}
+.selectedTab a:link,
+.selectedTab a:visited,
+.selectedTab a:hover,
+.selectedTab a:active
+{
+    background-color: #edeae2;
+    cursor: default;
+    height: 23px;
+    margin: 0 5px 0 0;
+}
+.selectedTab a:link span,
+.selectedTab a:visited span,
+.selectedTab a:hover span,
+.selectedTab a:active span
+{
+    background-color: transparent;
+    color: #333;
+    height: 23px;
+}
+.mainNav .selectedTab a
+{
+    background-color: #1f6ebe;
+    cursor: default;
+    height: 23px;
+    margin: 0 5px 0 0;
+    border-bottom-width: 0;
+}
+.mainNav .selectedTab a:link span,
+.mainNav .selectedTab a:visited span,
+.mainNav .selectedTab a:hover span,
+.mainNav .selectedTab a:active span
+{
+    background-color: #c5e0fc;
+    color: #1f6ebe;
+    height: 17px;
+}
+.mainNav .tab a span
+{
+    font-size: 90%;
+}
+.tabNav .tab a span
+{
+    font-size: 90%;
+}
+
+/* ====== FONTS ============================== */
+
+/* ====== COLOURS ============================== */
+
+/* ====== TABLES ============================== */
+table.Stats
+{
+    margin: 10px 0 0 0;
+    xxxwidth: 300px;
+    border-collapse: collapse;
+    background:transparent url(/Static/Images/bg75FFF.png) repeat scroll left top;
+}
+table.Stats th,
+table.Stats td
+{
+    padding: 5px;
+    border-bottom: 1px dotted #CCC;
+}
+table.Stats th
+{
+    font-weight: bold;
+    text-align: left;
+}
+
+/* ====== LAYOUT ============================== */
+#MainHeader
+{
+  height: 98px;
+}
+div.HeaderWrap
+{
+    background:transparent url(/Static/Images/bg75FFF.png) repeat scroll left top;
+}
+#Footer
+{
+    padding: 20px 0;
+    margin: 20px 0 0 0;
+    background-color: Aqua;
+}
+/* ====== PAGE SPECIFIC ======================== */
+
+/* ------ resort overview ------------------------ */
+#Map *
+{
+    z-index: 0;
+}
+#ResortInfo
+{
+    background:transparent url(/Static/Images/bg75FFF.png) repeat scroll left top;
+    height: 800px;
+    margin-top: -400px; 
+    xxxpadding:10px;
+    position: relative; 
+    z-index: 9999; 
+}
+
+#ResortInfo div.Inner
+{
+    margin: 10px;
+}
+
+
+
+
+
+div#ResortButtons
+{
+    margin: -400px 0 200px 0;
+    position: relative;
+    padding:5px;
+    height: 190px;  
+    width: 130px;
+    background:transparent url(/Static/Images/bg75FFF.png) repeat scroll left top;
+}
+a.btn
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 90%;
+    display: block;
+    float: left;
+    clear: both;
+    margin: 0;
+    width: 100px;
+    padding: 8px 5px 8px 25px;
+}
+a.btn.review:link,
+a.btn.review:visited
+{background: url('/Static/Images/Buttons/star_g.png') no-repeat 5px 50%;
+}
+a.btn.review:hover,
+a.btn.review:active
+{background: #FFF url(/Static/Images/Buttons/star.png) 5px 50% no-repeat;}
+a.btn.visited:link,
+a.btn.visited:visited
+{background: url('/Static/Images/Buttons/tick_shield_g.png') no-repeat 5px 50%;
+}
+a.btn.visited:hover,
+a.btn.visited:active
+{background: #FFF url(/Static/Images/Buttons/tick_shield.png) 5px 50% no-repeat;}
+a.btn.favourite:link,
+a.btn.favourite:visited
+{background: url('/Static/Images/Buttons/heart_g.png') no-repeat 5px 50%;
+}
+a.btn.favourite:hover,
+a.btn.favourite:active
+{background: #FFF url(/Static/Images/Buttons/heart.png) 5px 50% no-repeat;}
+a.btn.discuss:link,
+a.btn.discuss:visited
+{background: url('/Static/Images/Buttons/balloon_left_g.png') no-repeat 5px 50%;
+}
+a.btn.discuss:hover,
+a.btn.discuss:active
+{background: #FFF url(/Static/Images/Buttons/balloon_left.png) 5px 50% no-repeat;}
+a.btn.upload:link,
+a.btn.upload:visited
+{background: url('/Static/Images/Buttons/image_plus_g.png') no-repeat 5px 50%;
+}
+a.btn.upload:hover,
+a.btn.upload:active
+{background: #FFF url(/Static/Images/Buttons/image_plus.png) 5px 50% no-repeat;}
+a.btn.addmarker:link,
+a.btn.addmarker:visited
+{background: url('/Static/Images/Buttons/marker_g.png') no-repeat 5px 50%;
+}
+a.btn.addmarker:hover,
+a.btn.addmarker:active
+{background: #FFF url(/Static/Images/Buttons/marker.png) 5px 50% no-repeat;}
+a.btn.advertise:link,
+a.btn.advertise:visited
+{
+    background: url('/Static/Images/Buttons/advertise_g.png') no-repeat 5px 50%;
+}
+a.btn.advertise:hover,
+a.btn.advertise:active
+{
+    background: #FFF url(/Static/Images/Buttons/advertise.png) 5px 50% no-repeat;
+}
+
+
+#divMapWorld
+{
+    width: 460px;
+    height: 306px;
+    background-color: #999;
+    border: 0 none;
+}
+#divMapWorld.grid_9
+{
+    width: 700px;
+    height: 500px;
+    background-color: #999;
+    border: 0 none;
+}

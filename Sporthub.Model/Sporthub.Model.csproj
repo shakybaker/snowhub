@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F21F0A93-F9F2-45CF-AAC0-EABD4A63F1E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sporthub.Model</RootNamespace>
+    <AssemblyName>Sporthub.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accomodation.cs" />
+    <Compile Include="Activity.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="BarRestaurant.cs" />
+    <Compile Include="BasicJsonModel.cs" />
+    <Compile Include="Breadcrumb.cs" />
+    <Compile Include="CheckIn.cs" />
+    <Compile Include="ConfigData.cs" />
+    <Compile Include="ConfigSportType.cs" />
+    <Compile Include="Continent.cs" />
+    <Compile Include="Airport.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="DataColumnReference.cs" />
+    <Compile Include="Enumerators\ErrorLevel.cs" />
+    <Compile Include="Enumerators\ExperienceLevel.cs" />
+    <Compile Include="Enumerators\FeedbackType.cs" />
+    <Compile Include="Enumerators\LocationLevel.cs" />
+    <Compile Include="Enumerators\NewsFeedType.cs" />
+    <Compile Include="Enumerators\ProfileThumbSize.cs" />
+    <Compile Include="Enumerators\QS.cs" />
+    <Compile Include="Enumerators\ResortLinkType.cs" />
+    <Compile Include="Enumerators\ResortSuits.cs" />
+    <Compile Include="Enumerators\ScoreSize.cs" />
+    <Compile Include="Enumerators\UserRoleType.cs" />
+    <Compile Include="ErrorItem.cs" />
+    <Compile Include="ErrorList.cs" />
+    <Compile Include="Feedback.cs" />
+    <Compile Include="Forum.cs" />
+    <Compile Include="GetResortsModel.cs" />
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="LinkResortRegion.cs" />
+    <Compile Include="LinkResortSkiArea.cs" />
+    <Compile Include="LinkResortUser.cs" />
+    <Compile Include="LinkSkiAreaCountry.cs" />
+    <Compile Include="LinkUserSportType.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="NewsFeed.cs" />
+    <Compile Include="NewsFeedItem.cs" />
+    <Compile Include="Picture.cs" />
+    <Compile Include="Place.cs" />
+    <Compile Include="PlaceType.cs" />
+    <Compile Include="Post.cs" />
+    <Compile Include="PrincipalUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RatingItem.cs" />
+    <Compile Include="Region.cs" />
+    <Compile Include="Resort.cs" />
+    <Compile Include="ResortLink.cs" />
+    <Compile Include="ResortStats.cs" />
+    <Compile Include="ReviewUsefulness.cs" />
+    <Compile Include="ScrapeResort.cs" />
+    <Compile Include="Search.cs" />
+    <Compile Include="SearchResults.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="SessionContext.cs" />
+    <Compile Include="SkiArea.cs" />
+    <Compile Include="Thread.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserContext.cs" />
+    <Compile Include="UserPic.cs" />
+    <Compile Include="UserRole.cs" />
+    <Compile Include="WeatherForecast.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

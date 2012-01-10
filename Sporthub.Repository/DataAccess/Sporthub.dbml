@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="sporthub" Class="SporthubDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=NH-LAPTOP-120;Initial Catalog=sporthub;Persist Security Info=True;User ID=sporthubuser" SettingsObjectName="Sporthub.Repository.Properties.Settings" SettingsPropertyName="sporthubConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.UserSocialNetwork" Member="UserSocialNetworks">
+    <Type Name="UserSocialNetwork">
+      <Column Name="idNetworkLink" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ThisTableNeedsSomeThought" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CheckIn" Member="CheckIns">
+    <Type Name="CheckIn">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CheckinDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IPAddress" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Longitude" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Resort_CheckIn" Member="Resort" ThisKey="ResortID" Type="Resort" IsForeignKey="true" />
+      <Association Name="User_CheckIn" Member="User" ThisKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CodeDecode" Member="CodeDecodes">
+    <Type Name="CodeDecode">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodeGroupID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsGeneral" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GeneralText" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TableName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ColumnName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DisplayValue" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CodeValue" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sequence" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConfigBoardBindingType" Member="ConfigBoardBindingTypes">
+    <Type Name="ConfigBoardBindingType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BoardBindingType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConfigCuisine" Member="ConfigCuisines">
+    <Type Name="ConfigCuisine">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Cuisine" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConfigManufacturerType" Member="ConfigManufacturerTypes">
+    <Type Name="ConfigManufacturerType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ManufacturerType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConfigPostStatus" Member="ConfigPostStatus">
+    <Type Name="ConfigPostStatus">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PostStatus" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConfigResortLinkType" Member="ConfigResortLinkTypes">
+    <Type Name="ConfigResortLinkType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConfigSportType" Member="ConfigSportTypes">
+    <Type Name="ConfigSportType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ParentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Sequence" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Collective" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Verb" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Alias" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="IsSki" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsSnowboard" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsOther" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="ConfigSportType_LinkUserSportType" Member="LinkUserSportTypes" OtherKey="SportTypeID" Type="LinkUserSportType" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConfigThreadStatus" Member="ConfigThreadStatus">
+    <Type Name="ConfigThreadStatus">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ThreadStatus" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Continent" Member="Continents">
+    <Type Name="Continent">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContinentName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PrettyUrl" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Code" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Latitude" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="HasResorts" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Continent_Country" Member="Countries" OtherKey="ContinentID" Type="Country" />
+      <Association Name="Continent_Resort" Member="Resorts" OtherKey="ContinentID" Type="Resort" />
+      <Association Name="Continent_Airport" Member="Airports" OtherKey="ContinentID" Type="Airport" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Country" Member="Countries">
+    <Type Name="Country">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContinentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CountryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PrettyUrl" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MajorDestinationRank" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ISO3166Alpha2" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="ISO3166Alpha3" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Capital" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Area" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Population" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Currency" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SubCurrency" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HasResorts" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="GenericPic" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Language" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Religion" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GMT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mass" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HighestPoint" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HighestPointDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Country_Resort" Member="Resorts" OtherKey="CountryID" Type="Resort" />
+      <Association Name="Country_Airport" Member="Airports" OtherKey="CountryID" Type="Airport" />
+      <Association Name="Continent_Country" Member="Continent" ThisKey="ContinentID" Type="Continent" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Forum" Member="Forums">
+    <Type Name="Forum">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ForumName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Sequence" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Forum_Thread" Member="Threads" OtherKey="ForumID" Type="Thread" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkManufacturerManufacturerType" Member="LinkManufacturerManufacturerTypes">
+    <Type Name="LinkManufacturerManufacturerType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ManufacturerID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ManufacturerTypeID" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkResortMountainRange" Member="LinkResortMountainRanges">
+    <Type Name="LinkResortMountainRange">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RangeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkResortPicture" Member="LinkResortPictures">
+    <Type Name="LinkResortPicture">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PictureID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkResortProCon" Member="LinkResortProCons">
+    <Type Name="LinkResortProCon">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProConID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkResortRegion" Member="LinkResortRegions">
+    <Type Name="LinkResortRegion">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RegionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RegionTerm" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkResortSkiArea" Member="LinkResortSkiAreas">
+    <Type Name="LinkResortSkiArea">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SkiAreaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkResortThread" Member="LinkResortThreads">
+    <Type Name="LinkResortThread">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ThreadID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkResortUser" Member="LinkResortUsers">
+    <Type Name="LinkResortUser">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Score" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HasVisited" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsFavourite" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastVisitDate" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ReviewText" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ResortSuitsExpert" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsAdvanced" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsIntermediate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsBeginner" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsLively" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsAverage" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsQuiet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsSkiers" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsSnowboarders" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsBoth" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsExpensive" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsAffordable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResortSuitsCheap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LiftRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SnowRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QueueRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SceneryRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ConvenienceRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccomodationRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FoodRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FacilitiesRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NightlifeRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Resort_LinkResortUser" Member="Resort" ThisKey="ResortID" Type="Resort" IsForeignKey="true" />
+      <Association Name="User_LinkResortUser" Member="User" ThisKey="UserID" Type="User" IsForeignKey="true" />
+      <Association Name="ReviewUsefulness_LinkResortUser" Member="ReviewUsefulness" ThisKey="ID" OtherKey="LinkResortUserID" Type="ReviewUsefulness" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkSkiAreaCountry" Member="LinkSkiAreaCountries">
+    <Type Name="LinkSkiAreaCountry">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SkiAreaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CountryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkUserSportType" Member="LinkUserSportTypes">
+    <Type Name="LinkUserSportType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SportTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Seasons" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Level]" Member="Level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ConfigSportType_LinkUserSportType" Member="ConfigSportType" ThisKey="SportTypeID" Type="ConfigSportType" IsForeignKey="true" />
+      <Association Name="User_LinkUserSportType" Member="User" ThisKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LinkUserUser" Member="LinkUserUsers">
+    <Type Name="LinkUserUser">
+      <Column Name="id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="needssomethought" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Manufacturer" Member="Manufacturers">
+    <Type Name="Manufacturer">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ManufacturerName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="THIS_NEEDS_FIXING" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContactName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MountainRange" Member="MountainRanges">
+    <Type Name="MountainRange">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContinentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MountainRange" Member="MountainRange1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PrettyUrl" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewsFeed" Member="NewsFeeds">
+    <Type Name="NewsFeed">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FeedURL" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FeedSite" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FeedName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FeedDescription" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FaviconURL" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="UseFavicon" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="NewsFeedTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Picture" Member="Pictures">
+    <Type Name="Picture">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OriginalFilename" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Filename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Post" Member="Posts">
+    <Type Name="Post">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ThreadID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PostText" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="IsVisible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsSticky" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PostStatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Thread_Post" Member="Thread" ThisKey="ThreadID" Type="Thread" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProCon" Member="ProCons">
+    <Type Name="ProCon">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsPro" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Region" Member="Regions">
+    <Type Name="Region">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CountryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ParentRegionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RegionLevel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PrettyUrl" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="HasResorts" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Resort" Member="Resorts">
+    <Type Name="Resort">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NameFriendlyFormat" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Display" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PrettyUrl" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PrettyUrlFriendlyFormat" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AlsoKnownAs" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="CountryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CountryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ContinentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContinentName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GeonameID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsNorthernHemisphere" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Overview" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="IsFeaturedResort" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CanPublish" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="WikipediaUrl" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="PictureName" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="PictureUrl" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PictureLicenceType" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PictureAuthor" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PictureAuthorUrl" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Score" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScoreTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScoreCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsExpert" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsAdvanced" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsIntermediate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsBeginner" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsLively" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsAverage" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsQuiet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsSkiers" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsSnowboarders" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsBoth" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsExpensive" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsAffordable" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortSuitsCheap" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LiftRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SnowRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QueueRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SceneryRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ConvenienceRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccomodationRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FoodRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FacilitiesRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NightlifeRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LiftTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LiftCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SnowTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SnowCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QueueTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QueueCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SceneryTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SceneryCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ConvenienceTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ConvenienceCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccomodationTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccomodationCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FoodTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FoodCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FacilitiesTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FacilitiesCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NightlifeTotal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NightlifeCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VisitedCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FavedCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsSkiArea" Type="System.Boolean" CanBeNull="false" />
+      <Association Name="Resort_CheckIn" Member="CheckIns" OtherKey="ResortID" Type="CheckIn" />
+      <Association Name="Resort_LinkResortUser" Member="LinkResortUsers" OtherKey="ResortID" Type="LinkResortUser" />
+      <Association Name="Resort_ResortStat" Member="ResortStats" OtherKey="ResortID" Type="ResortStat" />
+      <Association Name="Continent_Resort" Member="Continent" ThisKey="ContinentID" Type="Continent" IsForeignKey="true" />
+      <Association Name="Country_Resort" Member="Country" ThisKey="CountryID" Type="Country" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResortAlias" Member="ResortAlias">
+    <Type Name="ResortAlia">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResortLink" Member="ResortLinks">
+    <Type Name="ResortLink">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResortLinkTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Sequence" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResortRating" Member="ResortRatings">
+    <Type Name="ResortRating">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LiftRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SnowRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QueueRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SceneryRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ConvenienceRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccomodationRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FoodRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FacilitiesRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NightlifeRating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Review" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResortReview" Member="ResortReviews">
+    <Type Name="ResortReview">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReviewTitle" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ReviewBrief" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ReviewBody" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResortStats" Member="ResortStats">
+    <Type Name="ResortStat">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BaseLevel" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TopLevel" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="VerticalDrop" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Height" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="AverageSnowfall" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HasSnowmaking" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SnowmakingCoverage" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PreSeasonStartMonth" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SeasonStartMonth" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SeasonEndMonth" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Population" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MountainRestaurants" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LiftDescription" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="LiftTotal" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LiftCapacityHour" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="QuadPlusCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="QuadCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TripleCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DoubleCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SingleCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SurfaceCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CableLiftCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="GondolaCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="FunicularCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SurfaceTrainCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="RunTotal" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="BlackRuns" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="RedRuns" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="BlueRuns" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="GreenRuns" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LongestRunDistance" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="RunTotalDistance" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HasSnowpark" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SnowparkTotal" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SnowparkDescription" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HasHalfpipe" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HalfpipeTotal" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HalfpipeDescription" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HasQuarterpipe" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="QuarterpipeTotal" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="QuarterpipeDescription" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SkiableTerrianSize" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HasNightskiing" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NightskiingDescription" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HasSummerskiing" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SummerskiingDescription" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SummerStartMonth" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SummerEndMonth" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Snowfall1Jan" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Snowfall2Feb" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Snowfall3Mar" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Snowfall4Apr" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Snowfall5May" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Snowfall6Jun" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Snowfall7Jul" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Snowfall8Aug" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Snowfall9Sep" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Snowfall10Oct" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Snowfall11Nov" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Snowfall12Dec" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Resort_ResortStat" Member="Resort" ThisKey="ResortID" Type="Resort" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResortTouristOffice" Member="ResortTouristOffices">
+    <Type Name="ResortTouristOffice">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TouristOfficeAddress" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="FaxNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RestaurantBar" Member="RestaurantBars">
+    <Type Name="RestaurantBar">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IsBar" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsRestaurant" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsTakeAway" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HasInternet" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HasWiFi" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CuisineID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HasLiveMusic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LiveMusicDescription" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HasLiveMusicMon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HasLiveMusicTue" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HasLiveMusicWed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HasLiveMusicThu" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HasLiveMusicFri" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HasLiveMusicSat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HasLiveMusicSun" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ScrapeResortStats" Member="ScrapeResortStats">
+    <Type Name="ScrapeResortStat">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PrettyUrl" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CountryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="BaseLevel" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TopLevel" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="VerticalDrop" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Height" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="AverageSnowfall" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HasSnowmaking" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SnowmakingCoverage" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PreSeasonStartMonth" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SeasonStartMonth" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SeasonEndMonth" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Population" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MountainRestaurants" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LiftDescription" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="LiftTotal" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LiftCapacityHour" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="QuadPlusCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="QuadCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TripleCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DoubleCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SingleCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SurfaceCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="GondolaCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="FunicularCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SurfaceTrainCount" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="RunTotal" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="BlackRuns" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="RedRuns" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="BlueRuns" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="GreenRuns" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LongestRunDistance" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SkiableTerrianSize" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Service" Member="Services">
+    <Type Name="Service">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ServiceCategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ServiceName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Description" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SkiArea" Member="SkiAreas">
+    <Type Name="SkiArea">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SkiBoardModel" Member="SkiBoardModels">
+    <Type Name="SkiBoardModel">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsSnowboard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ManufacturerID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ManufacturerOther" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ModelName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Length" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BoardBindingTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Thread" Member="Threads">
+    <Type Name="Thread">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ForumID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ThreadStatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="IsVisible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsSticky" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ResortID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Thread_Post" Member="Posts" OtherKey="ThreadID" Type="Post" />
+      <Association Name="Forum_Thread" Member="Forum" ThisKey="ForumID" Type="Forum" IsForeignKey="true" />
+      <Association Name="User_Thread" Member="User" ThisKey="UpdatedUserID" Type="User" IsForeignKey="true" />
+      <Association Name="User_Thread1" Member="User1" ThisKey="CreatedUserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserRole" Member="UserRoles">
+    <Type Name="UserRole">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserRoleCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="UserRoleDesc" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsModerator" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsUserAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsDataAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsSuperAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PointsRequired" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="UserRole_User" Member="Users" OtherKey="UserRoleID" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Activity" Member="Activities">
+    <Type Name="Activity">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FacebookUid" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ActionText" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ActionLink" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ActionClass" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SubjectText" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="SubjectLink" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="SubjectID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="User_Activity" Member="User" ThisKey="CreatedUserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SignupStageReachedID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReferrerURL" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="RealName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UserRoleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Sex" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Age" Type="System.String" DbType="Char(5)" CanBeNull="true" />
+      <Column Name="DobDay" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="DobMonth" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="DobYear" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="UsualCity" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UsualCountryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsSnowboarder" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsFreerideBoarder" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isFreestyleBoarder" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAlpineBoarder" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsSkier" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAlpineSkier" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsLanglaufSkier" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsNonBoarderSkier" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Points" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AddThreshold" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IPAddressOriginal" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IPAddressLast" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LastVisitDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="JoinDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FacebookUid" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HasProfilePicture" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="User_CheckIn" Member="CheckIns" OtherKey="UserID" Type="CheckIn" />
+      <Association Name="User_LinkResortUser" Member="LinkResortUsers" OtherKey="UserID" Type="LinkResortUser" />
+      <Association Name="User_LinkUserSportType" Member="LinkUserSportTypes" OtherKey="UserID" Type="LinkUserSportType" />
+      <Association Name="User_Thread" Member="Threads" OtherKey="UpdatedUserID" Type="Thread" />
+      <Association Name="User_Thread1" Member="Threads1" OtherKey="CreatedUserID" Type="Thread" />
+      <Association Name="User_Activity" Member="Activities" OtherKey="CreatedUserID" Type="Activity" />
+      <Association Name="User_ReviewUsefulness" Member="ReviewUsefulnesses" OtherKey="UserID" Type="ReviewUsefulness" />
+      <Association Name="UserRole_User" Member="UserRole" ThisKey="UserRoleID" Type="UserRole" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Airport" Member="Airports">
+    <Type Name="Airport">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="NameFriendlyFormat" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="PrettyUrl" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="PrettyUrlFriendlyFormat" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Code" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="CountryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CountryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ContinentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContinentName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Website" Type="System.String" CanBeNull="false" />
+      <Association Name="Continent_Airport" Member="Continent" ThisKey="ContinentID" Type="Continent" IsForeignKey="true" />
+      <Association Name="Country_Airport" Member="Country" ThisKey="CountryID" Type="Country" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReviewUsefulness" Member="ReviewUsefulnesses">
+    <Type Name="ReviewUsefulness">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LinkResortUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsUseful" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ReviewUsefulness_LinkResortUser" Member="LinkResortUsers" ThisKey="LinkResortUserID" OtherKey="ID" Type="LinkResortUser" />
+      <Association Name="User_ReviewUsefulness" Member="User" ThisKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

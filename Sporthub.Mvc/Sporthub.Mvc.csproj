@@ -1,0 +1,1218 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{649D4EEA-3139-49F9-872E-381A50255DCB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sporthub.Mvc</RootNamespace>
+    <AssemblyName>Sporthub.Mvc</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FacebookGraphAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Demos\fbGraphApiSample\fbGraphApiSample\Bin\FacebookGraphAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xml.Schema.Linq, Version=0.10.1000.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\DLLs\Microsoft.Xml.Schema.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="checkout\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\FacebookGraphAPI.cs" />
+    <Compile Include="Code\Helpers\ResortHelper.cs" />
+    <Compile Include="Code\Helpers\UserHelper.cs" />
+    <Compile Include="Code\oAuthFacebook.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminLocationsController.cs" />
+    <Compile Include="Controllers\AdminResortsController.cs" />
+    <Compile Include="Controllers\AjaxController.cs" />
+    <Compile Include="Controllers\AirportsController.cs" />
+    <Compile Include="Controllers\ForumsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\AdminRegionsController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\PlacesController.cs" />
+    <Compile Include="Controllers\ResortsController.cs" />
+    <Compile Include="Controllers\ReviewController.cs" />
+    <Compile Include="Controllers\ShopController.cs" />
+    <Compile Include="Controllers\SiteController.cs" />
+    <Compile Include="Controllers\SporthubController.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FBCallback.aspx.cs">
+      <DependentUpon>FBCallback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FBCallback.aspx.designer.cs">
+      <DependentUpon>FBCallback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\GetHeader.aspx.cs">
+      <DependentUpon>GetHeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utils\GetHeader.aspx.designer.cs">
+      <DependentUpon>GetHeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewData\AddResortLinkViewData.cs" />
+    <Compile Include="ViewData\AdminLocationsListViewData.cs" />
+    <Compile Include="ViewData\AdminRegionsListViewData.cs" />
+    <Compile Include="ViewData\AdminResortsListViewData.cs" />
+    <Compile Include="ViewData\AirportsLandingViewData.cs" />
+    <Compile Include="ViewData\AirportViewViewData.cs" />
+    <Compile Include="ViewData\BasicUserListViewData.cs" />
+    <Compile Include="ViewData\CheckInViewData.cs" />
+    <Compile Include="ViewData\ForumsListViewData.cs" />
+    <Compile Include="ViewData\ForumViewData.cs" />
+    <Compile Include="ViewData\HomeViewData.cs" />
+    <Compile Include="ViewData\LoginViewData.cs" />
+    <Compile Include="ViewData\NewsFeedItemsViewData.cs" />
+    <Compile Include="ViewData\NewsListViewData.cs" />
+    <Compile Include="ViewData\PostsViewData.cs" />
+    <Compile Include="ViewData\RegisterSucessViewData.cs" />
+    <Compile Include="ViewData\ResortLinksListViewData.cs" />
+    <Compile Include="ViewData\ResortLinkViewData.cs" />
+    <Compile Include="ViewData\ResortRatingsViewData.cs" />
+    <Compile Include="ViewData\ResortsListViewData.cs" />
+    <Compile Include="ViewData\ResortViewData.cs" />
+    <Compile Include="ViewData\SessionViewData.cs" />
+    <Compile Include="ViewData\SiteViewData.cs" />
+    <Compile Include="ViewData\SporthubViewData.cs" />
+    <Compile Include="ViewData\ThreadsListViewData.cs" />
+    <Compile Include="ViewData\UsersViewData.cs" />
+    <Compile Include="ViewData\UserViewData.cs" />
+    <Compile Include="Views\Shared\Masters\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\Masters\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Masters\Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\Masters\Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Masters\NoNav.Master.cs">
+      <DependentUpon>NoNav.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\Masters\NoNav.Master.designer.cs">
+      <DependentUpon>NoNav.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Masters\Sporthub.Master.cs">
+      <DependentUpon>Sporthub.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\Masters\Sporthub.Master.designer.cs">
+      <DependentUpon>Sporthub.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Account\Create.aspx" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="apple-touch-icon.png" />
+    <Content Include="Content\Resorts\méribel.png" />
+    <Content Include="Content\Resorts\Orig\méribel.jpg" />
+    <Content Include="Content\Users\shaky.gif" />
+    <Content Include="Content\Users\shaky.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Static\Images\bg-blue.png" />
+    <Content Include="Static\Images\bg-green-trans.png" />
+    <Content Include="Static\Images\bg-green.png" />
+    <Content Include="Static\Images\bg-head-sub.png" />
+    <Content Include="Static\Images\bg-quick-search.png" />
+    <Content Include="Static\Images\bg-rating-green.png" />
+    <Content Include="Static\Images\bg-rating-orange.png" />
+    <Content Include="Static\Images\bg-rating-red.png" />
+    <Content Include="Static\Images\bg-rating-score-ovr.png" />
+    <Content Include="Static\Images\bg-rating-yellow.png" />
+    <Content Include="Static\Images\bg-rating.png" />
+    <Content Include="Static\Images\bg-red.png" />
+    <Content Include="Static\Images\bg-splash-info.png" />
+    <Content Include="Static\Images\bg-info-win-head.png" />
+    <Content Include="Static\Images\bg-textbox.png" />
+    <Content Include="Static\Images\bgSearch.png" />
+    <Content Include="Static\Images\bullet_grey.png" />
+    <Content Include="Static\Images\img_inquisitor\as_pointer.gif" />
+    <Content Include="Static\Images\img_inquisitor\hl_corner_bl.gif" />
+    <Content Include="Static\Images\img_inquisitor\hl_corner_br.gif" />
+    <Content Include="Static\Images\img_inquisitor\hl_corner_tl.gif" />
+    <Content Include="Static\Images\img_inquisitor\hl_corner_tr.gif" />
+    <Content Include="Static\Images\img_inquisitor\ul_corner_bl.gif" />
+    <Content Include="Static\Images\img_inquisitor\ul_corner_br.gif" />
+    <Content Include="Static\Images\img_inquisitor\ul_corner_tl.gif" />
+    <Content Include="Static\Images\img_inquisitor\ul_corner_tr.gif" />
+    <Content Include="Static\Images\lift-chair-2.png" />
+    <Content Include="Static\Images\lift-chair-3.png" />
+    <Content Include="Static\Images\lift-chair-4-plus.png" />
+    <Content Include="Static\Images\lift-chair-4.png" />
+    <Content Include="Static\Images\lift-chair.png" />
+    <Content Include="Static\Images\lift-gondola.png" />
+    <Content Include="Static\Images\lift-surface.png" />
+    <Content Include="Static\Images\Markers\marker_flickr_ovr.png" />
+    <Content Include="Static\Images\Markers\marker_webcams.png" />
+    <Content Include="Static\Images\Markers\marker_webcams_ovr.png" />
+    <Content Include="Static\Images\run-black-2d.png" />
+    <Content Include="Static\Images\run-black-d.png" />
+    <Content Include="Static\Images\run-black.png" />
+    <Content Include="Static\Images\run-blue-s.png" />
+    <Content Include="Static\Images\run-blue.png" />
+    <Content Include="Static\Images\run-green.png" />
+    <Content Include="Static\Images\run-red-d.png" />
+    <Content Include="Static\Images\run-red.png" />
+    <Content Include="Static\Images\slider-1.png" />
+    <Content Include="Static\Images\slider-disabled-1.png" />
+    <Content Include="Static\Images\slider-disabled.png" />
+    <Content Include="Static\Images\slider.png" />
+    <Content Include="Static\Images\splash.png" />
+    <Content Include="Static\Images\sprite-bg.png" />
+    <Content Include="Static\Images\strap.png" />
+    <Content Include="Static\Images\test.png" />
+    <Content Include="Static\Images\white-triangle.png" />
+    <Content Include="Static\Scripts\bsn.AutoSuggest_2.1.3.js" />
+    <Content Include="Static\Scripts\bsn.AutoSuggest_2.1.3_comp.js" />
+    <Content Include="Static\Scripts\cufon-yui.js" />
+    <Content Include="Static\Scripts\Hybrea_400-Hybrea_700.font.js" />
+    <Content Include="Static\Scripts\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="Static\Images\Ads\120x240Verticalbanner.gif" />
+    <Content Include="Static\Images\Ads\120x600Skyscraper.gif" />
+    <Content Include="Static\Images\Ads\120x60Button.gif" />
+    <Content Include="Static\Images\Ads\120x90Button.gif" />
+    <Content Include="Static\Images\Ads\125x125Squarebutton.gif" />
+    <Content Include="Static\Images\Ads\160x600wIDESkyscraper.gif" />
+    <Content Include="Static\Images\Ads\180x150Rectangle.gif" />
+    <Content Include="Static\Images\Ads\234x60Halfbanner.gif" />
+    <Content Include="Static\Images\Ads\240x400VerticalRectangle.gif" />
+    <Content Include="Static\Images\Ads\250x250SquarePop-Up.gif" />
+    <Content Include="Static\Images\Ads\300x250MediumRectangle.gif" />
+    <Content Include="Static\Images\Ads\336x280LargeRectangle.gif" />
+    <Content Include="Static\Images\Ads\425x425ExtraLargeRectangle.gif" />
+    <Content Include="Static\Images\Ads\425x500ExtraLargeRectangle.gif" />
+    <Content Include="Static\Images\Ads\425x600ExtraLargeRectangle.gif" />
+    <Content Include="Static\Images\Ads\468x60Fullhorizontalbanner.gif" />
+    <Content Include="Static\Images\Ads\728x90-Leaderboardbannerad.gif" />
+    <Content Include="Static\Images\Ads\88x31MicroButton.gif" />
+    <Content Include="Static\Images\Anim\loading-horiz-l.gif" />
+    <Content Include="Static\Images\Anim\loading-m.gif" />
+    <Content Include="Static\Images\Anim\load-s.gif" />
+    <Content Include="Static\Images\arrow2.png" />
+    <Content Include="Static\Images\bar.gif" />
+    <Content Include="Static\Images\bar_blue.gif" />
+    <Content Include="Static\Images\bar_green.gif" />
+    <Content Include="Static\Images\bar_orange.gif" />
+    <Content Include="Static\Images\bar_purple.gif" />
+    <Content Include="Static\Images\bar_red.gif" />
+    <Content Include="Static\Images\bg-rating-score.png" />
+    <Content Include="Static\Images\bg75FFF.png" />
+    <Content Include="Static\Images\bgBanner.png" />
+    <Content Include="Static\Images\bg_body.gif" />
+    <Content Include="Static\Images\bg_h2pod-green.png" />
+    <Content Include="Static\Images\bg_h2pod-grey.png" />
+    <Content Include="Static\Images\bg_h2pod-pink.png" />
+    <Content Include="Static\Images\bg_h2pod.png" />
+    <Content Include="Static\Images\bg_h3pod-grey.png" />
+    <Content Include="Static\Images\bg_info.png" />
+    <Content Include="Static\Images\bg_pod.png" />
+    <Content Include="Static\Images\btn0.png" />
+    <Content Include="Static\Images\Buttons\advertise.png" />
+    <Content Include="Static\Images\Buttons\advertise_g.png" />
+    <Content Include="Static\Images\Buttons\balloon_left.png" />
+    <Content Include="Static\Images\Buttons\balloon_left_g.png" />
+    <Content Include="Static\Images\Buttons\heart.png" />
+    <Content Include="Static\Images\Buttons\heart_g.png" />
+    <Content Include="Static\Images\Buttons\image_plus.png" />
+    <Content Include="Static\Images\Buttons\image_plus_g.png" />
+    <Content Include="Static\Images\Buttons\marker.png" />
+    <Content Include="Static\Images\Buttons\marker_g.png" />
+    <Content Include="Static\Images\Buttons\picture_plus.png" />
+    <Content Include="Static\Images\Buttons\picture_plus_g.png" />
+    <Content Include="Static\Images\Buttons\star.png" />
+    <Content Include="Static\Images\Buttons\star_g.png" />
+    <Content Include="Static\Images\Buttons\tick_shield.png" />
+    <Content Include="Static\Images\Buttons\tick_shield_g.png" />
+    <Content Include="Static\Images\feed.png" />
+    <Content Include="Static\Images\Flags\ad.png" />
+    <Content Include="Static\Images\Flags\ae.png" />
+    <Content Include="Static\Images\Flags\af.png" />
+    <Content Include="Static\Images\Flags\ag.png" />
+    <Content Include="Static\Images\Flags\ai.png" />
+    <Content Include="Static\Images\Flags\al.png" />
+    <Content Include="Static\Images\Flags\am.png" />
+    <Content Include="Static\Images\Flags\an.png" />
+    <Content Include="Static\Images\Flags\ao.png" />
+    <Content Include="Static\Images\Flags\ar.png" />
+    <Content Include="Static\Images\Flags\as.png" />
+    <Content Include="Static\Images\Flags\at.png" />
+    <Content Include="Static\Images\Flags\au.png" />
+    <Content Include="Static\Images\Flags\aw.png" />
+    <Content Include="Static\Images\Flags\ax.png" />
+    <Content Include="Static\Images\Flags\az.png" />
+    <Content Include="Static\Images\Flags\ba.png" />
+    <Content Include="Static\Images\Flags\bb.png" />
+    <Content Include="Static\Images\Flags\bd.png" />
+    <Content Include="Static\Images\Flags\be.png" />
+    <Content Include="Static\Images\Flags\bf.png" />
+    <Content Include="Static\Images\Flags\bg.png" />
+    <Content Include="Static\Images\Flags\bh.png" />
+    <Content Include="Static\Images\Flags\bi.png" />
+    <Content Include="Static\Images\Flags\bj.png" />
+    <Content Include="Static\Images\Flags\bm.png" />
+    <Content Include="Static\Images\Flags\bn.png" />
+    <Content Include="Static\Images\Flags\bo.png" />
+    <Content Include="Static\Images\Flags\br.png" />
+    <Content Include="Static\Images\Flags\bs.png" />
+    <Content Include="Static\Images\Flags\bt.png" />
+    <Content Include="Static\Images\Flags\bv.png" />
+    <Content Include="Static\Images\Flags\bw.png" />
+    <Content Include="Static\Images\Flags\by.png" />
+    <Content Include="Static\Images\Flags\bz.png" />
+    <Content Include="Static\Images\Flags\ca.png" />
+    <Content Include="Static\Images\Flags\catalonia.png" />
+    <Content Include="Static\Images\Flags\cc.png" />
+    <Content Include="Static\Images\Flags\cd.png" />
+    <Content Include="Static\Images\Flags\cf.png" />
+    <Content Include="Static\Images\Flags\cg.png" />
+    <Content Include="Static\Images\Flags\ch.png" />
+    <Content Include="Static\Images\Flags\ci.png" />
+    <Content Include="Static\Images\Flags\ck.png" />
+    <Content Include="Static\Images\Flags\cl.png" />
+    <Content Include="Static\Images\Flags\cm.png" />
+    <Content Include="Static\Images\Flags\cn.png" />
+    <Content Include="Static\Images\Flags\co.png" />
+    <Content Include="Static\Images\Flags\cr.png" />
+    <Content Include="Static\Images\Flags\cs.png" />
+    <Content Include="Static\Images\Flags\cu.png" />
+    <Content Include="Static\Images\Flags\cv.png" />
+    <Content Include="Static\Images\Flags\cx.png" />
+    <Content Include="Static\Images\Flags\cy.png" />
+    <Content Include="Static\Images\Flags\cz.png" />
+    <Content Include="Static\Images\Flags\de.png" />
+    <Content Include="Static\Images\Flags\dj.png" />
+    <Content Include="Static\Images\Flags\dk.png" />
+    <Content Include="Static\Images\Flags\dm.png" />
+    <Content Include="Static\Images\Flags\do.png" />
+    <Content Include="Static\Images\Flags\dz.png" />
+    <Content Include="Static\Images\Flags\ec.png" />
+    <Content Include="Static\Images\Flags\ee.png" />
+    <Content Include="Static\Images\Flags\eg.png" />
+    <Content Include="Static\Images\Flags\eh.png" />
+    <Content Include="Static\Images\Flags\england.png" />
+    <Content Include="Static\Images\Flags\er.png" />
+    <Content Include="Static\Images\Flags\es.png" />
+    <Content Include="Static\Images\Flags\et.png" />
+    <Content Include="Static\Images\Flags\europeanunion.png" />
+    <Content Include="Static\Images\Flags\fam.png" />
+    <Content Include="Static\Images\Flags\fi.png" />
+    <Content Include="Static\Images\Flags\fj.png" />
+    <Content Include="Static\Images\Flags\fk.png" />
+    <Content Include="Static\Images\Flags\fm.png" />
+    <Content Include="Static\Images\Flags\fo.png" />
+    <Content Include="Static\Images\Flags\fr.png" />
+    <Content Include="Static\Images\Flags\ga.png" />
+    <Content Include="Static\Images\Flags\gb.png" />
+    <Content Include="Static\Images\Flags\gd.png" />
+    <Content Include="Static\Images\Flags\ge.png" />
+    <Content Include="Static\Images\Flags\gf.png" />
+    <Content Include="Static\Images\Flags\gh.png" />
+    <Content Include="Static\Images\Flags\gi.png" />
+    <Content Include="Static\Images\Flags\gl.png" />
+    <Content Include="Static\Images\Flags\gm.png" />
+    <Content Include="Static\Images\Flags\gn.png" />
+    <Content Include="Static\Images\Flags\gp.png" />
+    <Content Include="Static\Images\Flags\gq.png" />
+    <Content Include="Static\Images\Flags\gr.png" />
+    <Content Include="Static\Images\Flags\gs.png" />
+    <Content Include="Static\Images\Flags\gt.png" />
+    <Content Include="Static\Images\Flags\gu.png" />
+    <Content Include="Static\Images\Flags\gw.png" />
+    <Content Include="Static\Images\Flags\gy.png" />
+    <Content Include="Static\Images\Flags\hk.png" />
+    <Content Include="Static\Images\Flags\hm.png" />
+    <Content Include="Static\Images\Flags\hn.png" />
+    <Content Include="Static\Images\Flags\hr.png" />
+    <Content Include="Static\Images\Flags\ht.png" />
+    <Content Include="Static\Images\Flags\hu.png" />
+    <Content Include="Static\Images\Flags\id.png" />
+    <Content Include="Static\Images\Flags\ie.png" />
+    <Content Include="Static\Images\Flags\il.png" />
+    <Content Include="Static\Images\Flags\in.png" />
+    <Content Include="Static\Images\Flags\io.png" />
+    <Content Include="Static\Images\Flags\iq.png" />
+    <Content Include="Static\Images\Flags\ir.png" />
+    <Content Include="Static\Images\Flags\is.png" />
+    <Content Include="Static\Images\Flags\it.png" />
+    <Content Include="Static\Images\Flags\jm.png" />
+    <Content Include="Static\Images\Flags\jo.png" />
+    <Content Include="Static\Images\Flags\jp.png" />
+    <Content Include="Static\Images\Flags\ke.png" />
+    <Content Include="Static\Images\Flags\kg.png" />
+    <Content Include="Static\Images\Flags\kh.png" />
+    <Content Include="Static\Images\Flags\ki.png" />
+    <Content Include="Static\Images\Flags\km.png" />
+    <Content Include="Static\Images\Flags\kn.png" />
+    <Content Include="Static\Images\Flags\kp.png" />
+    <Content Include="Static\Images\Flags\kr.png" />
+    <Content Include="Static\Images\Flags\kw.png" />
+    <Content Include="Static\Images\Flags\ky.png" />
+    <Content Include="Static\Images\Flags\kz.png" />
+    <Content Include="Static\Images\Flags\la.png" />
+    <Content Include="Static\Images\Flags\lb.png" />
+    <Content Include="Static\Images\Flags\lc.png" />
+    <Content Include="Static\Images\Flags\li.png" />
+    <Content Include="Static\Images\Flags\lk.png" />
+    <Content Include="Static\Images\Flags\lr.png" />
+    <Content Include="Static\Images\Flags\ls.png" />
+    <Content Include="Static\Images\Flags\lt.png" />
+    <Content Include="Static\Images\Flags\lu.png" />
+    <Content Include="Static\Images\Flags\lv.png" />
+    <Content Include="Static\Images\Flags\ly.png" />
+    <Content Include="Static\Images\Flags\ma.png" />
+    <Content Include="Static\Images\Flags\mc.png" />
+    <Content Include="Static\Images\Flags\md.png" />
+    <Content Include="Static\Images\Flags\me.png" />
+    <Content Include="Static\Images\Flags\mg.png" />
+    <Content Include="Static\Images\Flags\mh.png" />
+    <Content Include="Static\Images\Flags\mk.png" />
+    <Content Include="Static\Images\Flags\ml.png" />
+    <Content Include="Static\Images\Flags\mm.png" />
+    <Content Include="Static\Images\Flags\mn.png" />
+    <Content Include="Static\Images\Flags\mo.png" />
+    <Content Include="Static\Images\Flags\mp.png" />
+    <Content Include="Static\Images\Flags\mq.png" />
+    <Content Include="Static\Images\Flags\mr.png" />
+    <Content Include="Static\Images\Flags\ms.png" />
+    <Content Include="Static\Images\Flags\mt.png" />
+    <Content Include="Static\Images\Flags\mu.png" />
+    <Content Include="Static\Images\Flags\mv.png" />
+    <Content Include="Static\Images\Flags\mw.png" />
+    <Content Include="Static\Images\Flags\mx.png" />
+    <Content Include="Static\Images\Flags\my.png" />
+    <Content Include="Static\Images\Flags\mz.png" />
+    <Content Include="Static\Images\Flags\na.png" />
+    <Content Include="Static\Images\Flags\nc.png" />
+    <Content Include="Static\Images\Flags\ne.png" />
+    <Content Include="Static\Images\Flags\nf.png" />
+    <Content Include="Static\Images\Flags\ng.png" />
+    <Content Include="Static\Images\Flags\ni.png" />
+    <Content Include="Static\Images\Flags\nl.png" />
+    <Content Include="Static\Images\Flags\no.png" />
+    <Content Include="Static\Images\Flags\np.png" />
+    <Content Include="Static\Images\Flags\nr.png" />
+    <Content Include="Static\Images\Flags\nu.png" />
+    <Content Include="Static\Images\Flags\nz.png" />
+    <Content Include="Static\Images\Flags\om.png" />
+    <Content Include="Static\Images\Flags\pa.png" />
+    <Content Include="Static\Images\Flags\pe.png" />
+    <Content Include="Static\Images\Flags\pf.png" />
+    <Content Include="Static\Images\Flags\pg.png" />
+    <Content Include="Static\Images\Flags\ph.png" />
+    <Content Include="Static\Images\Flags\pk.png" />
+    <Content Include="Static\Images\Flags\pl.png" />
+    <Content Include="Static\Images\Flags\pm.png" />
+    <Content Include="Static\Images\Flags\pn.png" />
+    <Content Include="Static\Images\Flags\pr.png" />
+    <Content Include="Static\Images\Flags\ps.png" />
+    <Content Include="Static\Images\Flags\pt.png" />
+    <Content Include="Static\Images\Flags\pw.png" />
+    <Content Include="Static\Images\Flags\py.png" />
+    <Content Include="Static\Images\Flags\qa.png" />
+    <Content Include="Static\Images\Flags\re.png" />
+    <Content Include="Static\Images\Flags\ro.png" />
+    <Content Include="Static\Images\Flags\rs.png" />
+    <Content Include="Static\Images\Flags\ru.png" />
+    <Content Include="Static\Images\Flags\rw.png" />
+    <Content Include="Static\Images\Flags\sa.png" />
+    <Content Include="Static\Images\Flags\sb.png" />
+    <Content Include="Static\Images\Flags\sc.png" />
+    <Content Include="Static\Images\Flags\scotland.png" />
+    <Content Include="Static\Images\Flags\sd.png" />
+    <Content Include="Static\Images\Flags\se.png" />
+    <Content Include="Static\Images\Flags\sg.png" />
+    <Content Include="Static\Images\Flags\sh.png" />
+    <Content Include="Static\Images\Flags\si.png" />
+    <Content Include="Static\Images\Flags\sj.png" />
+    <Content Include="Static\Images\Flags\sk.png" />
+    <Content Include="Static\Images\Flags\sl.png" />
+    <Content Include="Static\Images\Flags\sm.png" />
+    <Content Include="Static\Images\Flags\sn.png" />
+    <Content Include="Static\Images\Flags\so.png" />
+    <Content Include="Static\Images\Flags\sr.png" />
+    <Content Include="Static\Images\Flags\st.png" />
+    <Content Include="Static\Images\Flags\sv.png" />
+    <Content Include="Static\Images\Flags\sy.png" />
+    <Content Include="Static\Images\Flags\sz.png" />
+    <Content Include="Static\Images\Flags\tc.png" />
+    <Content Include="Static\Images\Flags\td.png" />
+    <Content Include="Static\Images\Flags\tf.png" />
+    <Content Include="Static\Images\Flags\tg.png" />
+    <Content Include="Static\Images\Flags\th.png" />
+    <Content Include="Static\Images\Flags\tj.png" />
+    <Content Include="Static\Images\Flags\tk.png" />
+    <Content Include="Static\Images\Flags\tl.png" />
+    <Content Include="Static\Images\Flags\tm.png" />
+    <Content Include="Static\Images\Flags\tn.png" />
+    <Content Include="Static\Images\Flags\to.png" />
+    <Content Include="Static\Images\Flags\tr.png" />
+    <Content Include="Static\Images\Flags\tt.png" />
+    <Content Include="Static\Images\Flags\tv.png" />
+    <Content Include="Static\Images\Flags\tw.png" />
+    <Content Include="Static\Images\Flags\tz.png" />
+    <Content Include="Static\Images\Flags\ua.png" />
+    <Content Include="Static\Images\Flags\ug.png" />
+    <Content Include="Static\Images\Flags\um.png" />
+    <Content Include="Static\Images\Flags\us.png" />
+    <Content Include="Static\Images\Flags\uy.png" />
+    <Content Include="Static\Images\Flags\uz.png" />
+    <Content Include="Static\Images\Flags\va.png" />
+    <Content Include="Static\Images\Flags\vc.png" />
+    <Content Include="Static\Images\Flags\ve.png" />
+    <Content Include="Static\Images\Flags\vg.png" />
+    <Content Include="Static\Images\Flags\vi.png" />
+    <Content Include="Static\Images\Flags\vn.png" />
+    <Content Include="Static\Images\Flags\vu.png" />
+    <Content Include="Static\Images\Flags\wales.png" />
+    <Content Include="Static\Images\Flags\wf.png" />
+    <Content Include="Static\Images\Flags\ws.png" />
+    <Content Include="Static\Images\Flags\ye.png" />
+    <Content Include="Static\Images\Flags\yt.png" />
+    <Content Include="Static\Images\Flags\za.png" />
+    <Content Include="Static\Images\Flags\zm.png" />
+    <Content Include="Static\Images\Flags\zw.png" />
+    <Content Include="Static\Images\Anim\loading-l.gif" />
+    <Content Include="Static\Images\Maps\20.png" />
+    <Content Include="Static\Images\Maps\5.png" />
+    <Content Include="Static\Images\Maps\50.png" />
+    <Content Include="Static\Images\Maps\50plus.png" />
+    <Content Include="Static\Images\Maps\zoom-control-active.png" />
+    <Content Include="Static\Images\Maps\zoom-control-inactive.png" />
+    <Content Include="Static\Images\Markers\marker_flickr.png" />
+    <Content Include="Static\Images\Markers\marker_flickr_on.png" />
+    <Content Include="Static\Images\Markers\marker_resort_small.png" />
+    <Content Include="Static\Images\Markers\marker_resort_small_ovr.png" />
+    <Content Include="Static\Images\Markers\marker_shadow.png" />
+    <Content Include="Static\Images\Markers\resort_l_off.png" />
+    <Content Include="Static\Images\Markers\resort_l_ovr.png" />
+    <Content Include="Static\Images\Markers\resort_s_off.png" />
+    <Content Include="Static\Images\Markers\Size\20.png" />
+    <Content Include="Static\Images\Markers\Size\5.png" />
+    <Content Include="Static\Images\Markers\Size\50.png" />
+    <Content Include="Static\Images\Markers\Size\50plus.png" />
+    <Content Include="Static\Images\placeholder.png" />
+    <Content Include="Static\Images\rating-superb.png" />
+    <Content Include="Static\Images\red_b.png" />
+    <Content Include="Static\Images\red_beak.png" />
+    <Content Include="Static\Images\red_bl.png" />
+    <Content Include="Static\Images\red_br.png" />
+    <Content Include="Static\Images\red_close.png" />
+    <Content Include="Static\Images\red_l.png" />
+    <Content Include="Static\Images\red_r.png" />
+    <Content Include="Static\Images\red_t.png" />
+    <Content Include="Static\Images\red_tl.png" />
+    <Content Include="Static\Images\red_tr.png" />
+    <Content Include="Static\Images\resort-placeholder.png" />
+    <Content Include="Static\Images\snowhub.png" />
+    <Content Include="Static\Scripts\dragzoom.js" />
+    <Content Include="Static\Scripts\extinfowindow.js" />
+    <Content Include="Static\Scripts\jquery-1.3.2.min.js" />
+    <Content Include="Static\Scripts\jquery-ui-personalized-1.6rc2.packed.js" />
+    <Content Include="Static\Scripts\jquery.blockUI.js" />
+    <Content Include="Static\Scripts\jquery.qtip-1.0.0-rc3.min.js" />
+    <Content Include="Static\Scripts\labeledmarker.js" />
+    <Content Include="Static\Scripts\mapClustered.js" />
+    <Content Include="Static\Scripts\maps.js" />
+    <Content Include="Static\Scripts\Slider.js" />
+    <Content Include="Static\Scripts\sporthub.js" />
+    <Content Include="Static\Scripts\thickbox.js" />
+    <Content Include="Static\Scripts\utilities.js" />
+    <Content Include="Static\Styles\960.css" />
+    <Content Include="Static\Styles\autosuggest_inquisitor.css" />
+    <Content Include="Static\Styles\redInfoWindow.css" />
+    <Content Include="Static\Styles\Reset.css" />
+    <Content Include="Static\Styles\Slider.css" />
+    <Content Include="Static\Styles\Sporthub.css" />
+    <Content Include="Static\Styles\thickbox.css" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Static\Styles\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Static\Styles\ui-lightness\jquery-ui-1.7.2.custom.css" />
+    <Content Include="Utils\GetHeader.aspx" />
+    <Content Include="Views\Account\Profile.aspx" />
+    <Content Include="Views\Account\Login.aspx" />
+    <Content Include="Views\AdminLocations\Edit.aspx" />
+    <Content Include="Views\AdminLocations\List.aspx" />
+    <Content Include="Views\AdminRegions\List.aspx" />
+    <Content Include="Views\Admin\Index.aspx" />
+    <Content Include="Views\Ajax\AddResortLink.aspx" />
+    <Content Include="Views\AdminResorts\Edit.aspx" />
+    <Content Include="Views\AdminResorts\List.aspx" />
+    <Content Include="Views\Ajax\GetFeed.aspx" />
+    <Content Include="Views\Ajax\ResortPopup.aspx" />
+    <Content Include="Views\Ajax\ResortLinksList.aspx" />
+    <Content Include="Views\Forums\Threads.aspx" />
+    <Content Include="Views\Forums\List.aspx" />
+    <Content Include="Views\News\List.aspx" />
+    <Content Include="Views\Resorts\Webcams.aspx" />
+    <Content Include="Views\Resorts\Videos.aspx" />
+    <Content Include="Views\Resorts\Photos.aspx" />
+    <Content Include="Views\Resorts\Overview.aspx" />
+    <Content Include="Views\Resorts\ListCountry.aspx" />
+    <Content Include="Views\Resorts\ListContinent.aspx" />
+    <Content Include="Views\Resorts\Map.aspx" />
+    <Content Include="Views\Shared\Masters\Sporthub.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sporthub.Data\Sporthub.Data.csproj">
+      <Project>{D25C2509-8A24-46FD-848F-E875AE655BF9}</Project>
+      <Name>Sporthub.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sporthub.Model\Sporthub.Model.csproj">
+      <Project>{F21F0A93-F9F2-45CF-AAC0-EABD4A63F1E5}</Project>
+      <Name>Sporthub.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sporthub.Repository\Sporthub.Repository.csproj">
+      <Project>{AF68B80B-D8E7-486C-BC75-B8E4E3ECBEB9}</Project>
+      <Name>Sporthub.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sporthub.Services\Sporthub.Services.csproj">
+      <Project>{99335935-AE18-4130-B174-9EC706BED052}</Project>
+      <Name>Sporthub.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sporthub.Utilities\Sporthub.Utils.csproj">
+      <Project>{85BA148F-35E6-43CC-B11A-65DE271C3EB1}</Project>
+      <Name>Sporthub.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Static\hybrea bold.ttf" />
+    <None Include="Static\hybrea.ttf" />
+    <None Include="Static\Images\Designs\add-to-faves.psd" />
+    <None Include="Static\Images\Designs\add-to-faves2.psd" />
+    <None Include="Static\Images\Designs\avgsnow.psd" />
+    <None Include="Static\Images\Designs\btn0.psd" />
+    <None Include="Static\Images\Designs\favourite-button.psd" />
+    <None Include="Static\Images\Designs\lukees.psd" />
+    <None Include="Static\Images\Designs\mark-as-visited.psd" />
+    <None Include="Static\Images\Designs\marker-menu.psd" />
+    <None Include="Static\Images\Designs\markers.psd" />
+    <None Include="Static\Images\Designs\markers2.psd" />
+    <None Include="Static\Images\Designs\markers3.psd" />
+    <None Include="Static\Images\Designs\markers4.psd" />
+    <None Include="Static\Images\Designs\sprite-resort.psd" />
+    <None Include="Static\Images\Designs\Untitled-1.psd" />
+    <None Include="Static\Images\Designs\Untitled-11.psd" />
+    <None Include="Static\Images\Designs\Untitled-111.psd" />
+    <None Include="Static\Images\Designs\Untitled-2.psd" />
+    <None Include="Static\Images\Designs\Untitled-3.psd" />
+    <None Include="Static\Images\Designs\Untitled-4.psd" />
+    <None Include="Static\Images\Designs\Untitled-7.psd" />
+    <None Include="Static\Images\Designs\world.psd" />
+    <None Include="Static\Images\Designs\world2.psd" />
+    <None Include="Static\Images\sprites.psd" />
+    <Content Include="checkout\index.aspx" />
+    <Content Include="Content\Users\shaky_lge.png" />
+    <Content Include="Content\Users\shaky_sml.png" />
+    <Content Include="FBCallback.aspx" />
+    <Content Include="google69770f92251445de.html" />
+    <Content Include="Static\Images\airport_off.gif" />
+    <Content Include="Static\Images\airport_off.png" />
+    <Content Include="Static\Images\airport_on.png" />
+    <Content Include="Static\Images\been_off.png" />
+    <Content Include="Static\Images\been_on.png" />
+    <Content Include="Static\Images\facebook-button.png" />
+    <Content Include="Static\Images\fave_off.png" />
+    <Content Include="Static\Images\fave_on.png" />
+    <Content Include="Static\Images\review_off.png" />
+    <Content Include="Static\Images\review_on.png" />
+    <Content Include="Static\Images\star_grey.png" />
+    <Content Include="Static\Images\tile2.gif" />
+    <Content Include="Static\Images\user-no-pic-lge.png" />
+    <Content Include="Static\Images\user-no-pic.png" />
+    <Content Include="Static\Images\white-heart_48.png" />
+    <Content Include="Static\Images\white-star_48.png" />
+    <Content Include="Static\Images\white-tick_48.png" />
+    <Content Include="Static\Scripts\sporthub.maps.js" />
+    <Content Include="Static\Styles\sporthub-dark.css" />
+    <Content Include="Views\Account\AddPicture.aspx" />
+    <Content Include="Views\Account\Checkins.aspx" />
+    <Content Include="Views\Account\ForgotPassword.aspx" />
+    <Content Include="Views\Account\ResentActivation.aspx" />
+    <Content Include="Views\AdminResorts\AddResort.aspx" />
+    <Content Include="Views\AdminResorts\Links.aspx" />
+    <Content Include="Views\AdminResorts\Parks.aspx" />
+    <Content Include="Views\AdminResorts\Runs.aspx" />
+    <Content Include="Views\AdminResorts\Lifts.aspx" />
+    <Content Include="Views\AdminResorts\Mountain.aspx" />
+    <Content Include="Views\AdminResorts\Default.aspx" />
+    <Content Include="Views\Airports\View.aspx" />
+    <Content Include="Views\Airports\Index.aspx" />
+    <Content Include="Views\Ajax\ResortWeather.aspx" />
+    <Content Include="Views\Resorts\Places.aspx" />
+    <Content Include="Views\Resorts\SkiArea.aspx" />
+    <Content Include="Views\Shared\Masters\Home.Master" />
+    <Content Include="Content\Users\shaky_lge.jpg" />
+    <Content Include="Content\Users\shaky_sml.jpg" />
+    <Content Include="Static\Images\add-as-fave.png" />
+    <Content Include="Static\Images\Ads\skiline_200.png" />
+    <Content Include="Static\Images\Anim\loading-butt.gif" />
+    <Content Include="Static\Images\bg-light.png" />
+    <Content Include="Static\Images\bg-marker-flickr-on.png" />
+    <Content Include="Static\Images\bg-marker-off.png" />
+    <Content Include="Static\Images\bg-marker-on.png" />
+    <Content Include="Static\Images\bg-marker-panoramio-on.png" />
+    <Content Include="Static\Images\bg-marker-resorts-on.png" />
+    <Content Include="Static\Images\bg-marker-span-off.png" />
+    <Content Include="Static\Images\bg-marker-webcams-on.png" />
+    <Content Include="Static\Images\bg-marker-wikipedia-on.png" />
+    <Content Include="Static\Images\bg-marker-youtube-on.png" />
+    <Content Include="Static\Images\bg-textarea.png" />
+    <Content Include="Static\Images\bg-textbox-readonly.png" />
+    <Content Include="Static\Images\blue-triangle-down.png" />
+    <Content Include="Static\Images\btnLogout.png" />
+    <Content Include="Static\Images\bubble-btm-off.png" />
+    <Content Include="Static\Images\bubble-btm-on.png" />
+    <Content Include="Static\Images\bubble-top-off.png" />
+    <Content Include="Static\Images\bubble-top-on.png" />
+    <Content Include="Static\Images\bullet_green.png" />
+    <Content Include="Static\Images\circle_green.png" />
+    <Content Include="Static\Images\close-info.png" />
+    <Content Include="Static\Images\close.png" />
+    <Content Include="Static\Images\comment_48.png" />
+    <Content Include="Static\Images\connectwithfacebook.png" />
+    <Content Include="Static\Images\facebook_32.png" />
+    <Content Include="Static\Images\fave-mini.png" />
+    <Content Include="Static\Images\fb-snowhub.png" />
+    <Content Include="Static\Images\fb.png" />
+    <Content Include="Static\Images\Feedback\checkmark_128.png" />
+    <Content Include="Static\Images\Feedback\checkmark_256.png" />
+    <Content Include="Static\Images\Feedback\checkmark_32.png" />
+    <Content Include="Static\Images\Feedback\checkmark_64.png" />
+    <Content Include="Static\Images\Feedback\error_128.png" />
+    <Content Include="Static\Images\Feedback\error_256.png" />
+    <Content Include="Static\Images\Feedback\error_32.png" />
+    <Content Include="Static\Images\Feedback\error_64.png" />
+    <Content Include="Static\Images\Feedback\forbidden_128.png" />
+    <Content Include="Static\Images\Feedback\forbidden_256.png" />
+    <Content Include="Static\Images\Feedback\forbidden_32.png" />
+    <Content Include="Static\Images\Feedback\forbidden_64.png" />
+    <Content Include="Static\Images\Feedback\help_128.png" />
+    <Content Include="Static\Images\Feedback\help_256.png" />
+    <Content Include="Static\Images\Feedback\help_32.png" />
+    <Content Include="Static\Images\Feedback\help_64.png" />
+    <Content Include="Static\Images\Feedback\information_128.png" />
+    <Content Include="Static\Images\Feedback\information_256.png" />
+    <Content Include="Static\Images\Feedback\information_32.png" />
+    <Content Include="Static\Images\Feedback\information_64.png" />
+    <Content Include="Static\Images\Feedback\thanks_32.png" />
+    <Content Include="Static\Images\Feedback\warning_128.png" />
+    <Content Include="Static\Images\Feedback\warning_256.png" />
+    <Content Include="Static\Images\Feedback\warning_32.png" />
+    <Content Include="Static\Images\Feedback\warning_64.png" />
+    <Content Include="Static\Images\Flags\lg\24\AD.png" />
+    <Content Include="Static\Images\Flags\lg\24\Afghanistan.png" />
+    <Content Include="Static\Images\Flags\lg\24\African Union%28OAS%29.png" />
+    <Content Include="Static\Images\Flags\lg\24\Albania.png" />
+    <Content Include="Static\Images\Flags\lg\24\Algeria.png" />
+    <Content Include="Static\Images\Flags\lg\24\American Samoa.png" />
+    <Content Include="Static\Images\Flags\lg\24\Angola.png" />
+    <Content Include="Static\Images\Flags\lg\24\Anguilla.png" />
+    <Content Include="Static\Images\Flags\lg\24\Antarctica.png" />
+    <Content Include="Static\Images\Flags\lg\24\Antigua &amp; Barbuda.png" />
+    <Content Include="Static\Images\Flags\lg\24\AR.png" />
+    <Content Include="Static\Images\Flags\lg\24\Arab League.png" />
+    <Content Include="Static\Images\Flags\lg\24\Armenia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Aruba.png" />
+    <Content Include="Static\Images\Flags\lg\24\ASEAN.png" />
+    <Content Include="Static\Images\Flags\lg\24\AT.png" />
+    <Content Include="Static\Images\Flags\lg\24\AU.png" />
+    <Content Include="Static\Images\Flags\lg\24\Azerbaijan.png" />
+    <Content Include="Static\Images\Flags\lg\24\Bahamas.png" />
+    <Content Include="Static\Images\Flags\lg\24\Bahrain.png" />
+    <Content Include="Static\Images\Flags\lg\24\Bangladesh.png" />
+    <Content Include="Static\Images\Flags\lg\24\Barbados.png" />
+    <Content Include="Static\Images\Flags\lg\24\Belarus.png" />
+    <Content Include="Static\Images\Flags\lg\24\Belgium.png" />
+    <Content Include="Static\Images\Flags\lg\24\Belize.png" />
+    <Content Include="Static\Images\Flags\lg\24\Benin.png" />
+    <Content Include="Static\Images\Flags\lg\24\Bermuda.png" />
+    <Content Include="Static\Images\Flags\lg\24\BG.png" />
+    <Content Include="Static\Images\Flags\lg\24\Bhutan.png" />
+    <Content Include="Static\Images\Flags\lg\24\Bolivia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Bosnia &amp; Herzegovina.png" />
+    <Content Include="Static\Images\Flags\lg\24\Botswana.png" />
+    <Content Include="Static\Images\Flags\lg\24\Brazil.png" />
+    <Content Include="Static\Images\Flags\lg\24\Brunei.png" />
+    <Content Include="Static\Images\Flags\lg\24\Burkina Faso.png" />
+    <Content Include="Static\Images\Flags\lg\24\Burundi.png" />
+    <Content Include="Static\Images\Flags\lg\24\CA.png" />
+    <Content Include="Static\Images\Flags\lg\24\Cambodja.png" />
+    <Content Include="Static\Images\Flags\lg\24\Cameroon.png" />
+    <Content Include="Static\Images\Flags\lg\24\Cape Verde.png" />
+    <Content Include="Static\Images\Flags\lg\24\CARICOM.png" />
+    <Content Include="Static\Images\Flags\lg\24\Cayman Islands.png" />
+    <Content Include="Static\Images\Flags\lg\24\Central African Republic.png" />
+    <Content Include="Static\Images\Flags\lg\24\CH.png" />
+    <Content Include="Static\Images\Flags\lg\24\Chad.png" />
+    <Content Include="Static\Images\Flags\lg\24\China.png" />
+    <Content Include="Static\Images\Flags\lg\24\CIS.png" />
+    <Content Include="Static\Images\Flags\lg\24\CL.png" />
+    <Content Include="Static\Images\Flags\lg\24\Colombia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Commonwealth.png" />
+    <Content Include="Static\Images\Flags\lg\24\Comoros.png" />
+    <Content Include="Static\Images\Flags\lg\24\Congo-Brazzaville.png" />
+    <Content Include="Static\Images\Flags\lg\24\Congo-Kinshasa.png" />
+    <Content Include="Static\Images\Flags\lg\24\Cook Islands.png" />
+    <Content Include="Static\Images\Flags\lg\24\Costa Rica.png" />
+    <Content Include="Static\Images\Flags\lg\24\Cote d%27Ivoire.png" />
+    <Content Include="Static\Images\Flags\lg\24\Cuba.png" />
+    <Content Include="Static\Images\Flags\lg\24\Cyprus.png" />
+    <Content Include="Static\Images\Flags\lg\24\Czech Republic.png" />
+    <Content Include="Static\Images\Flags\lg\24\DE.png" />
+    <Content Include="Static\Images\Flags\lg\24\Denmark.png" />
+    <Content Include="Static\Images\Flags\lg\24\Djibouti.png" />
+    <Content Include="Static\Images\Flags\lg\24\Dominica.png" />
+    <Content Include="Static\Images\Flags\lg\24\Dominican Republic.png" />
+    <Content Include="Static\Images\Flags\lg\24\Egypt.png" />
+    <Content Include="Static\Images\Flags\lg\24\El Salvador.png" />
+    <Content Include="Static\Images\Flags\lg\24\England.png" />
+    <Content Include="Static\Images\Flags\lg\24\Equador.png" />
+    <Content Include="Static\Images\Flags\lg\24\Equatorial Guinea.png" />
+    <Content Include="Static\Images\Flags\lg\24\Eritrea.png" />
+    <Content Include="Static\Images\Flags\lg\24\ES.png" />
+    <Content Include="Static\Images\Flags\lg\24\Estonia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Ethiopia.png" />
+    <Content Include="Static\Images\Flags\lg\24\European Union.png" />
+    <Content Include="Static\Images\Flags\lg\24\Faroes.png" />
+    <Content Include="Static\Images\Flags\lg\24\FI.png" />
+    <Content Include="Static\Images\Flags\lg\24\Fiji.png" />
+    <Content Include="Static\Images\Flags\lg\24\FR.png" />
+    <Content Include="Static\Images\Flags\lg\24\Gabon.png" />
+    <Content Include="Static\Images\Flags\lg\24\Gambia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Georgia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Ghana.png" />
+    <Content Include="Static\Images\Flags\lg\24\Gibraltar.png" />
+    <Content Include="Static\Images\Flags\lg\24\GR.png" />
+    <Content Include="Static\Images\Flags\lg\24\Greenland.png" />
+    <Content Include="Static\Images\Flags\lg\24\Grenada.png" />
+    <Content Include="Static\Images\Flags\lg\24\Guadeloupe.png" />
+    <Content Include="Static\Images\Flags\lg\24\Guam.png" />
+    <Content Include="Static\Images\Flags\lg\24\Guatemala.png" />
+    <Content Include="Static\Images\Flags\lg\24\Guernsey.png" />
+    <Content Include="Static\Images\Flags\lg\24\Guinea-Bissau.png" />
+    <Content Include="Static\Images\Flags\lg\24\Guinea.png" />
+    <Content Include="Static\Images\Flags\lg\24\Guyana.png" />
+    <Content Include="Static\Images\Flags\lg\24\Haiti.png" />
+    <Content Include="Static\Images\Flags\lg\24\Honduras.png" />
+    <Content Include="Static\Images\Flags\lg\24\Hong Kong.png" />
+    <Content Include="Static\Images\Flags\lg\24\HR.png" />
+    <Content Include="Static\Images\Flags\lg\24\Hungary.png" />
+    <Content Include="Static\Images\Flags\lg\24\Iceland.png" />
+    <Content Include="Static\Images\Flags\lg\24\IN.png" />
+    <Content Include="Static\Images\Flags\lg\24\Indonesia.png" />
+    <Content Include="Static\Images\Flags\lg\24\IR.png" />
+    <Content Include="Static\Images\Flags\lg\24\Iraq.png" />
+    <Content Include="Static\Images\Flags\lg\24\Ireland.png" />
+    <Content Include="Static\Images\Flags\lg\24\Islamic Conference.png" />
+    <Content Include="Static\Images\Flags\lg\24\Isle of Man.png" />
+    <Content Include="Static\Images\Flags\lg\24\IL.png" />
+    <Content Include="Static\Images\Flags\lg\24\IT.png" />
+    <Content Include="Static\Images\Flags\lg\24\Jamaica.png" />
+    <Content Include="Static\Images\Flags\lg\24\Jersey.png" />
+    <Content Include="Static\Images\Flags\lg\24\Jordan.png" />
+    <Content Include="Static\Images\Flags\lg\24\JP.png" />
+    <Content Include="Static\Images\Flags\lg\24\Kazakhstan.png" />
+    <Content Include="Static\Images\Flags\lg\24\Kenya.png" />
+    <Content Include="Static\Images\Flags\lg\24\Kiribati.png" />
+    <Content Include="Static\Images\Flags\lg\24\Kosovo.png" />
+    <Content Include="Static\Images\Flags\lg\24\Kuwait.png" />
+    <Content Include="Static\Images\Flags\lg\24\Kyrgyzstan.png" />
+    <Content Include="Static\Images\Flags\lg\24\Laos.png" />
+    <Content Include="Static\Images\Flags\lg\24\Latvia.png" />
+    <Content Include="Static\Images\Flags\lg\24\LB.png" />
+    <Content Include="Static\Images\Flags\lg\24\LS.png" />
+    <Content Include="Static\Images\Flags\lg\24\LI.png" />
+    <Content Include="Static\Images\Flags\lg\24\Liberia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Libya.png" />
+    <Content Include="Static\Images\Flags\lg\24\Lithuania.png" />
+    <Content Include="Static\Images\Flags\lg\24\Luxembourg.png" />
+    <Content Include="Static\Images\Flags\lg\24\Macao.png" />
+    <Content Include="Static\Images\Flags\lg\24\Macedonia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Madagascar.png" />
+    <Content Include="Static\Images\Flags\lg\24\Malawi.png" />
+    <Content Include="Static\Images\Flags\lg\24\Malaysia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Maldives.png" />
+    <Content Include="Static\Images\Flags\lg\24\Mali.png" />
+    <Content Include="Static\Images\Flags\lg\24\Malta.png" />
+    <Content Include="Static\Images\Flags\lg\24\Marshall Islands.png" />
+    <Content Include="Static\Images\Flags\lg\24\Martinique.png" />
+    <Content Include="Static\Images\Flags\lg\24\Mauritania.png" />
+    <Content Include="Static\Images\Flags\lg\24\Mauritius.png" />
+    <Content Include="Static\Images\Flags\lg\24\Mexico.png" />
+    <Content Include="Static\Images\Flags\lg\24\Micronesia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Moldova.png" />
+    <Content Include="Static\Images\Flags\lg\24\Monaco.png" />
+    <Content Include="Static\Images\Flags\lg\24\Mongolia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Montenegro.png" />
+    <Content Include="Static\Images\Flags\lg\24\Montserrat.png" />
+    <Content Include="Static\Images\Flags\lg\24\MA.png" />
+    <Content Include="Static\Images\Flags\lg\24\Mozambique.png" />
+    <Content Include="Static\Images\Flags\lg\24\Myanmar%28Burma%29.png" />
+    <Content Include="Static\Images\Flags\lg\24\Namibia.png" />
+    <Content Include="Static\Images\Flags\lg\24\NATO.png" />
+    <Content Include="Static\Images\Flags\lg\24\Nauru.png" />
+    <Content Include="Static\Images\Flags\lg\24\Nepal.png" />
+    <Content Include="Static\Images\Flags\lg\24\Netherlands Antilles.png" />
+    <Content Include="Static\Images\Flags\lg\24\Netherlands.png" />
+    <Content Include="Static\Images\Flags\lg\24\New Caledonia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Nicaragua.png" />
+    <Content Include="Static\Images\Flags\lg\24\Niger.png" />
+    <Content Include="Static\Images\Flags\lg\24\Nigeria.png" />
+    <Content Include="Static\Images\Flags\lg\24\NO.png" />
+    <Content Include="Static\Images\Flags\lg\24\North Korea.png" />
+    <Content Include="Static\Images\Flags\lg\24\Northern Cyprus.png" />
+    <Content Include="Static\Images\Flags\lg\24\Northern Ireland.png" />
+    <Content Include="Static\Images\Flags\lg\24\NZ.png" />
+    <Content Include="Static\Images\Flags\lg\24\Olimpic Movement.png" />
+    <Content Include="Static\Images\Flags\lg\24\Oman.png" />
+    <Content Include="Static\Images\Flags\lg\24\OPEC.png" />
+    <Content Include="Static\Images\Flags\lg\24\PK.png" />
+    <Content Include="Static\Images\Flags\lg\24\Palau.png" />
+    <Content Include="Static\Images\Flags\lg\24\Palestine.png" />
+    <Content Include="Static\Images\Flags\lg\24\Panama.png" />
+    <Content Include="Static\Images\Flags\lg\24\Papua New Guinea.png" />
+    <Content Include="Static\Images\Flags\lg\24\Paraguay.png" />
+    <Content Include="Static\Images\Flags\lg\24\Peru.png" />
+    <Content Include="Static\Images\Flags\lg\24\Philippines.png" />
+    <Content Include="Static\Images\Flags\lg\24\PL.png" />
+    <Content Include="Static\Images\Flags\lg\24\Portugal.png" />
+    <Content Include="Static\Images\Flags\lg\24\Puerto Rico.png" />
+    <Content Include="Static\Images\Flags\lg\24\Qatar.png" />
+    <Content Include="Static\Images\Flags\lg\24\Red Cross.png" />
+    <Content Include="Static\Images\Flags\lg\24\Reunion.png" />
+    <Content Include="Static\Images\Flags\lg\24\RO.png" />
+    <Content Include="Static\Images\Flags\lg\24\RU.png" />
+    <Content Include="Static\Images\Flags\lg\24\Rwanda.png" />
+    <Content Include="Static\Images\Flags\lg\24\Saint Lucia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Samoa.png" />
+    <Content Include="Static\Images\Flags\lg\24\San Marino.png" />
+    <Content Include="Static\Images\Flags\lg\24\Sao Tome &amp; Principe.png" />
+    <Content Include="Static\Images\Flags\lg\24\Saudi Arabia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Scotland.png" />
+    <Content Include="Static\Images\Flags\lg\24\SE.png" />
+    <Content Include="Static\Images\Flags\lg\24\Senegal.png" />
+    <Content Include="Static\Images\Flags\lg\24\Serbia%28Yugoslavia%29.png" />
+    <Content Include="Static\Images\Flags\lg\24\Seyshelles.png" />
+    <Content Include="Static\Images\Flags\lg\24\SI.png" />
+    <Content Include="Static\Images\Flags\lg\24\Sierra Leone.png" />
+    <Content Include="Static\Images\Flags\lg\24\Singapore.png" />
+    <Content Include="Static\Images\Flags\lg\24\SK.png" />
+    <Content Include="Static\Images\Flags\lg\24\Solomon Islands.png" />
+    <Content Include="Static\Images\Flags\lg\24\Somalia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Somaliland.png" />
+    <Content Include="Static\Images\Flags\lg\24\ZA.png" />
+    <Content Include="Static\Images\Flags\lg\24\KR.png" />
+    <Content Include="Static\Images\Flags\lg\24\Sri Lanka.png" />
+    <Content Include="Static\Images\Flags\lg\24\St Kitts &amp; Nevis.png" />
+    <Content Include="Static\Images\Flags\lg\24\St Vincent &amp; the Grenadines.png" />
+    <Content Include="Static\Images\Flags\lg\24\Sudan.png" />
+    <Content Include="Static\Images\Flags\lg\24\Suriname.png" />
+    <Content Include="Static\Images\Flags\lg\24\Swaziland.png" />
+    <Content Include="Static\Images\Flags\lg\24\Syria.png" />
+    <Content Include="Static\Images\Flags\lg\24\Tahiti%28French Polinesia%29.png" />
+    <Content Include="Static\Images\Flags\lg\24\Taiwan.png" />
+    <Content Include="Static\Images\Flags\lg\24\Tajikistan.png" />
+    <Content Include="Static\Images\Flags\lg\24\Tanzania.png" />
+    <Content Include="Static\Images\Flags\lg\24\Thailand.png" />
+    <Content Include="Static\Images\Flags\lg\24\Timor-Leste.png" />
+    <Content Include="Static\Images\Flags\lg\24\Togo.png" />
+    <Content Include="Static\Images\Flags\lg\24\Tonga.png" />
+    <Content Include="Static\Images\Flags\lg\24\Trinidad &amp; Tobago.png" />
+    <Content Include="Static\Images\Flags\lg\24\Tunisia.png" />
+    <Content Include="Static\Images\Flags\lg\24\TR.png" />
+    <Content Include="Static\Images\Flags\lg\24\Turkmenistan.png" />
+    <Content Include="Static\Images\Flags\lg\24\Turks and Caicos Islands.png" />
+    <Content Include="Static\Images\Flags\lg\24\Tuvalu.png" />
+    <Content Include="Static\Images\Flags\lg\24\Uganda.png" />
+    <Content Include="Static\Images\Flags\lg\24\Ukraine.png" />
+    <Content Include="Static\Images\Flags\lg\24\United Arab Emirates.png" />
+    <Content Include="Static\Images\Flags\lg\24\United Kingdom%28Great Britain%29.png" />
+    <Content Include="Static\Images\Flags\lg\24\United Nations.png" />
+    <Content Include="Static\Images\Flags\lg\24\Uruguay.png" />
+    <Content Include="Static\Images\Flags\lg\24\US.png" />
+    <Content Include="Static\Images\Flags\lg\24\Uzbekistan.png" />
+    <Content Include="Static\Images\Flags\lg\24\Vanuatu.png" />
+    <Content Include="Static\Images\Flags\lg\24\Vatican City.png" />
+    <Content Include="Static\Images\Flags\lg\24\VE.png" />
+    <Content Include="Static\Images\Flags\lg\24\Viet Nam.png" />
+    <Content Include="Static\Images\Flags\lg\24\Virgin Islands British.png" />
+    <Content Include="Static\Images\Flags\lg\24\Virgin Islands US.png" />
+    <Content Include="Static\Images\Flags\lg\24\Wales.png" />
+    <Content Include="Static\Images\Flags\lg\24\Western Sahara.png" />
+    <Content Include="Static\Images\Flags\lg\24\Yemen.png" />
+    <Content Include="Static\Images\Flags\lg\24\Zambia.png" />
+    <Content Include="Static\Images\Flags\lg\24\Zimbabwe.png" />
+    <Content Include="Static\Images\green-checkin.png" />
+    <Content Include="Static\Images\green-fave.png" />
+    <Content Include="Static\Images\green-reviewed.png" />
+    <Content Include="Static\Images\green-visited.png" />
+    <Content Include="Static\Images\grey-fave.png" />
+    <Content Include="Static\Images\grey-reviewed.png" />
+    <Content Include="Static\Images\grey-visited.png" />
+    <Content Include="Static\Images\heart_48.png" />
+    <Content Include="Static\Images\heart_red.png" />
+    <Content Include="Static\Images\IE\bg-pod-btm-3col.png" />
+    <Content Include="Static\Images\IE\bg-pod-btm-4col.png" />
+    <Content Include="Static\Images\IE\bg-pod-head-3col.png" />
+    <Content Include="Static\Images\IE\bg-pod-head-4col.png" />
+    <Content Include="Static\Images\image_48.png" />
+    <Content Include="Static\Images\map-world.png" />
+    <Content Include="Static\Images\mark-as-visited.png" />
+    <Content Include="Static\Images\Markers\marker_green_med.png" />
+    <Content Include="Static\Images\Markers\marker_green_med_ovr.png" />
+    <Content Include="Static\Images\Markers\marker_green_mini.png" />
+    <Content Include="Static\Images\Markers\marker_green_mini_ovr.png" />
+    <Content Include="Static\Images\Markers\marker_red_med.png" />
+    <Content Include="Static\Images\Markers\marker_red_med_ovr.png" />
+    <Content Include="Static\Images\Markers\marker_red_mini.png" />
+    <Content Include="Static\Images\Markers\marker_red_mini_ovr.png" />
+    <Content Include="Static\Images\Markers\marker_wikipedia.png" />
+    <Content Include="Static\Images\Markers\marker_wikipedia_ovr.png" />
+    <Content Include="Static\Images\Markers\marker_youtube.png" />
+    <Content Include="Static\Images\Markers\marker_youtube_ovr.png" />
+    <Content Include="Static\Images\paper_content_pencil_48.png" />
+    <Content Include="Static\Images\rate-review.png" />
+    <Content Include="Static\Images\splash-orig.png" />
+    <Content Include="Static\Images\sprite-resort.png" />
+    <Content Include="Static\Images\sprite-runs.png" />
+    <Content Include="Static\Images\sprite.png" />
+    <Content Include="Static\Images\star.png" />
+    <Content Include="Static\Images\star_48.png" />
+    <Content Include="Static\Images\test\bg-average-snowfall.png" />
+    <Content Include="Static\Images\test\bg-callout-green.png" />
+    <Content Include="Static\Images\test\bg-left-beak.png" />
+    <Content Include="Static\Images\test\bg-pod-head.png" />
+    <Content Include="Static\Images\test\bg-pod-subhead.png" />
+    <Content Include="Static\Images\test\bg-pod.png" />
+    <Content Include="Static\Images\test\bg-r-beak.png" />
+    <Content Include="Static\Images\test\bgstripes.gif" />
+    <Content Include="Static\Images\test\temp-slide-progress.png" />
+    <Content Include="Static\Images\test\temprating.png" />
+    <Content Include="Static\Images\tick_circle_green.png" />
+    <Content Include="Static\Images\tile.gif" />
+    <Content Include="Static\Images\user_silhouette.png" />
+    <Content Include="Static\Images\white-triangle-right.png" />
+    <Content Include="Static\Images\yellow-triangle.png" />
+    <Content Include="Static\Scripts\jquery-ui-1.7.2.custom.min-OLD.js" />
+    <Content Include="Static\Scripts\jquery.easing.1.3.js" />
+    <Content Include="Static\Scripts\jquery.fancybox\blank.gif" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancybox-x.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancybox-y.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancybox.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_close.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_loading.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_nav_left.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_nav_right.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_shadow_e.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_shadow_n.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_shadow_ne.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_shadow_nw.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_shadow_s.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_shadow_se.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_shadow_sw.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_shadow_w.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_title_left.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_title_main.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_title_over.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\fancy_title_right.png" />
+    <Content Include="Static\Scripts\jquery.fancybox\jquery.easing-1.3.pack.js" />
+    <Content Include="Static\Scripts\jquery.fancybox\jquery.fancybox-1.3.1.css" />
+    <Content Include="Static\Scripts\jquery.fancybox\jquery.fancybox-1.3.1.js" />
+    <Content Include="Static\Scripts\jquery.fancybox\jquery.fancybox-1.3.1.pack.js" />
+    <Content Include="Static\Scripts\jquery.fancybox\jquery.mousewheel-3.0.2.pack.js" />
+    <Content Include="Static\Scripts\sporthub-archive-version.js" />
+    <Content Include="Static\Scripts\thirdparty-min.js" />
+    <Content Include="Static\Styles\960-min.css" />
+    <Content Include="Static\Styles\autosuggest_inquisitor-min.css" />
+    <Content Include="Static\Styles\border-radius.htc" />
+    <Content Include="Static\Styles\csstidy.exe" />
+    <Content Include="Static\Styles\facebook.css" />
+    <Content Include="Static\Styles\jquery.ui.darkness-min.css" />
+    <Content Include="Static\Styles\old-ie.css" />
+    <Content Include="Static\Styles\reset-min.css" />
+    <Content Include="Static\Styles\sporthub-min.css" />
+    <Content Include="Static\Styles\sporthub-pack.css" />
+    <Content Include="Static\Styles\thirdparty-min.css" />
+    <Content Include="test.htm" />
+    <Content Include="Views\Account\EditUserResorts.aspx" />
+    <Content Include="Views\Account\InviteFriends.aspx" />
+    <Content Include="Views\Account\EditProfile.aspx" />
+    <Content Include="Views\Account\Edit.aspx" />
+    <Content Include="Views\Account\InvalidCode.aspx" />
+    <Content Include="Views\Account\LoginForm.ascx" />
+    <Content Include="Views\Account\NotActivated.aspx" />
+    <Content Include="Views\AdminResorts\EditResortLink.aspx" />
+    <Content Include="Views\Ajax\BasicUserList.aspx" />
+    <Content Include="Views\Forums\NewThread.aspx" />
+    <Content Include="Views\Forums\Posts.aspx" />
+    <Content Include="Views\Resorts\CheckIn.aspx" />
+    <Content Include="Views\Resorts\Review.aspx" />
+    <Content Include="Views\Resorts\ResortInfo.ascx" />
+    <Content Include="Views\Ajax\NotLoggedIn.aspx" />
+    <Content Include="Views\Resorts\Reviews.aspx" />
+    <Content Include="Views\Review\Edit.aspx" />
+    <Content Include="Views\Shared\Masters\NoNav.Master" />
+    <Content Include="Static\Images\bg-footer.png" />
+    <Content Include="Static\Images\Buttons\add-favorite.png" />
+    <Content Include="Static\Images\Buttons\add-visited.png" />
+    <Content Include="Static\Images\Buttons\remove-favourite.png" />
+    <Content Include="Static\Images\cross_circle.png" />
+    <Content Include="Static\Images\fancy_closebox.png" />
+    <Content Include="Static\Images\heart.png" />
+    <Content Include="Static\Images\plus.png" />
+    <Content Include="Static\Images\sprites.png" />
+    <Content Include="Static\Images\tick.png" />
+    <Content Include="Static\Images\tick_circle.png" />
+    <Content Include="Static\Styles\all-ie.css" />
+    <Content Include="Static\Styles\jquery.ui.darkness.css" />
+    <Content Include="Views\Account\RegisterSuccess.aspx" />
+    <Content Include="Views\Forums\ComingSoon.aspx" />
+    <Content Include="Views\Resorts\ListWorld.aspx" />
+    <Content Include="Views\Resorts\Info.aspx" />
+    <Content Include="Views\Shared\Masters\Admin.Master" />
+    <Content Include="Views\Shop\Index.aspx" />
+    <Content Include="Views\Site\AboutUs.aspx" />
+    <Content Include="Views\Site\Advertise.aspx" />
+    <Content Include="Views\Site\ComingSoon.aspx" />
+    <Content Include="Views\Site\ContactUs.aspx" />
+    <Content Include="Views\Site\404.aspx" />
+    <Content Include="Views\Site\PostingGuidelines.aspx" />
+    <Content Include="Views\Site\ie.aspx" />
+    <Content Include="Views\Site\PrivacyPolicy.aspx" />
+    <Content Include="Views\Site\RegisterNonFacebook.aspx" />
+    <Content Include="Views\Site\TermsAndConditions.aspx" />
+    <Content Include="xd_receiver.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\Users\Orig\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>61657</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost.www.thesnowhub.com</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost.www.thesnowhub.com/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
