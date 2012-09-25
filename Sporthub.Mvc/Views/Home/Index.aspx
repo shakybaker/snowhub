@@ -277,6 +277,7 @@
         $(document).ready(function () {
             sporthub.utility.twitter();
 
+            //this is a test
             $.getJSON("/Ajax/SnowReport", { resortID: 'x' }, function (data) {
                 if (data.Result == true) {
                     alert(data.Data);
@@ -286,6 +287,7 @@
                 }
             });
         });
+        
       
     </script>
 </asp:Content>
