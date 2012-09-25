@@ -273,10 +273,18 @@
 </asp:Content>
 <asp:Content ID="Scripts" ContentPlaceHolderID="ContentScripts" runat="server">
     <script type="text/javascript">
-        
-        $(document).ready(function() {
+
+        $(document).ready(function () {
             sporthub.utility.twitter();
 
+            $.getJSON("/Ajax/SnowReport", { resortID: 'x' }, function (data) {
+                if (data.Result == true) {
+                    alert(data.Data);
+                }
+                else {
+                    alert(data.ErrorMessage);
+                }
+            });
         });
       
     </script>

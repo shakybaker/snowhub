@@ -14,3 +14,11 @@ C:\Sandpit\Snowhub\Sporthub.Repository\bin\Release\Sporthub.Model.pdb
 C:\Sandpit\Snowhub\Sporthub.Repository\obj\Release\ResolveAssemblyReference.cache
 C:\Sandpit\Snowhub\Sporthub.Repository\obj\Release\Sporthub.Repository.dll
 C:\Sandpit\Snowhub\Sporthub.Repository\obj\Release\Sporthub.Repository.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Repository\bin\Release\Sporthub.Repository.dll.config
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Repository\bin\Release\Sporthub.Repository.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Repository\bin\Release\Sporthub.Repository.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Repository\bin\Release\Sporthub.Model.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Repository\bin\Release\Sporthub.Model.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Repository\obj\Release\ResolveAssemblyReference.cache
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Repository\obj\Release\Sporthub.Repository.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Repository\obj\Release\Sporthub.Repository.pdb

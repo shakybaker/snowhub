@@ -702,5 +702,26 @@ namespace Sporthub.Mvc.Controllers
 
             return text;
         }
+
+        public JsonResult SnowReport(string resortID)
+        {
+            var feedUrl =
+                "http://services.onthesnow.com/axis2/services/SnowReport2009/lite/resort/snow/330/www.thesnowhub.com/47dda198b4ba86f7400a5bff63258f2dbe0ba27bf1406f74?lang=en&met=imp";
+
+            XNamespace slashNamespace = "http://purl.org/rss/1.0/modules/slash/";
+            var rssFeed = XDocument.Load(feedUrl);
+
+            return this.Json(new
+            {
+                Data = rssFeed,
+                Result = true,
+                IsAuthenticated = true,
+                ErrorMessage = "",
+                IsRemove = false
+            },
+            JsonRequestBehavior.AllowGet);
+        }
+
+
     }
 }

@@ -20,3 +20,14 @@ C:\Sandpit\Snowhub\Sporthub.Services\bin\Release\Sporthub.Utilities.pdb
 C:\Sandpit\Snowhub\Sporthub.Services\obj\Release\ResolveAssemblyReference.cache
 C:\Sandpit\Snowhub\Sporthub.Services\obj\Release\Sporthub.Services.dll
 C:\Sandpit\Snowhub\Sporthub.Services\obj\Release\Sporthub.Services.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Services\bin\Release\Sporthub.Services.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Services\bin\Release\Sporthub.Services.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Services\bin\Release\Sporthub.Model.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Services\bin\Release\Sporthub.Repository.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Services\bin\Release\Sporthub.Utilities.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Services\bin\Release\Sporthub.Model.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Services\bin\Release\Sporthub.Repository.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Services\bin\Release\Sporthub.Utilities.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Services\obj\Release\ResolveAssemblyReference.cache
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Services\obj\Release\Sporthub.Services.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Services\obj\Release\Sporthub.Services.pdb

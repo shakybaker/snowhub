@@ -8,3 +8,8 @@ C:\Sandpit\Snowhub\References\bin\Release\References.pdb
 C:\Sandpit\Snowhub\References\obj\Release\ResolveAssemblyReference.cache
 C:\Sandpit\Snowhub\References\obj\Release\References.dll
 C:\Sandpit\Snowhub\References\obj\Release\References.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\References\bin\Release\References.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\References\bin\Release\References.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\References\obj\Release\ResolveAssemblyReference.cache
+C:\Users\mark.baker\Documents\GitHub\snowhub\References\obj\Release\References.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\References\obj\Release\References.pdb

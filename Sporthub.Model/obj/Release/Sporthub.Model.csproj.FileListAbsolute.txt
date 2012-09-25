@@ -10,3 +10,9 @@ C:\Sandpit\Snowhub\Sporthub.Model\bin\Release\Sporthub.Model.pdb
 C:\Sandpit\Snowhub\Sporthub.Model\obj\Release\ResolveAssemblyReference.cache
 C:\Sandpit\Snowhub\Sporthub.Model\obj\Release\Sporthub.Model.dll
 C:\Sandpit\Snowhub\Sporthub.Model\obj\Release\Sporthub.Model.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Model\bin\Release\Sporthub.Model.dll.config
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Model\bin\Release\Sporthub.Model.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Model\bin\Release\Sporthub.Model.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Model\obj\Release\ResolveAssemblyReference.cache
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Model\obj\Release\Sporthub.Model.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Model\obj\Release\Sporthub.Model.pdb

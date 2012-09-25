@@ -28,6 +28,7 @@ namespace Sporthub.Services
 
         public IList<Sporthub.Model.User> GetRecentVisitors()
         {
+            
             return this.userRepository.AsQueryable().OrderByDescending(x => x.LastVisitDate).Take(6).ToList<Sporthub.Model.User>();
         }
 

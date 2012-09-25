@@ -12,3 +12,10 @@ C:\Sandpit\Snowhub\facebook.Linq\bin\Release\Microsoft.Xml.Schema.Linq.dll
 C:\Sandpit\Snowhub\facebook.Linq\obj\Release\ResolveAssemblyReference.cache
 C:\Sandpit\Snowhub\facebook.Linq\obj\Release\facebook.Linq.dll
 C:\Sandpit\Snowhub\facebook.Linq\obj\Release\facebook.Linq.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\facebook.Linq\bin\Release\facebook.Linq.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\facebook.Linq\bin\Release\facebook.Linq.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\facebook.Linq\bin\Release\facebook.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\facebook.Linq\bin\Release\Microsoft.Xml.Schema.Linq.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\facebook.Linq\obj\Release\ResolveAssemblyReference.cache
+C:\Users\mark.baker\Documents\GitHub\snowhub\facebook.Linq\obj\Release\facebook.Linq.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\facebook.Linq\obj\Release\facebook.Linq.pdb
