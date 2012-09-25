@@ -713,7 +713,7 @@ namespace Sporthub.Mvc.Controllers
 
             return this.Json(new
             {
-                Data = rssFeed,
+                Data = rssFeed.ToJSON(),
                 Result = true,
                 IsAuthenticated = true,
                 ErrorMessage = "",
