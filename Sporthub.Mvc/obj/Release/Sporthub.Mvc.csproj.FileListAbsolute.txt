@@ -48,3 +48,5 @@ C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Mvc\bin\Sporthub.Utilities
 C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Mvc\obj\Release\ResolveAssemblyReference.cache
 C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Mvc\obj\Release\Sporthub.Mvc.dll
 C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Mvc\obj\Release\Sporthub.Mvc.pdb
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Mvc\bin\Newtonsoft.Json.dll
+C:\Users\mark.baker\Documents\GitHub\snowhub\Sporthub.Mvc\bin\Newtonsoft.Json.xml

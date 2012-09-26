@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 using System.Xml.Linq;
-
+using Newtonsoft.Json.Linq;
 using Sporthub.Data;
 using Sporthub.Model;
 using Sporthub.Model.Enumerators;
@@ -708,12 +708,13 @@ namespace Sporthub.Mvc.Controllers
             var feedUrl =
                 "http://services.onthesnow.com/axis2/services/SnowReport2009/lite/resort/snow/330/www.thesnowhub.com/47dda198b4ba86f7400a5bff63258f2dbe0ba27bf1406f74?lang=en&met=imp";
 
-            XNamespace slashNamespace = "http://purl.org/rss/1.0/modules/slash/";
-            var rssFeed = XDocument.Load(feedUrl);
+            var c = new WebClient();
+            var data = c.DownloadString(feedUrl);
+            var o = JObject.Parse(data);
 
             return this.Json(new
             {
-                Data = rssFeed.ToJSON(),
+                Data = o.ToString(),
                 Result = true,
                 IsAuthenticated = true,
                 ErrorMessage = "",
