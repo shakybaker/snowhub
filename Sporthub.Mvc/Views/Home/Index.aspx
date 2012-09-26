@@ -280,10 +280,10 @@
             //this is a test
             $.getJSON("/Ajax/SnowReport", { resortID: 'x' }, function (data) {
                 if (data.Result == true) {
-                    alert(data.Data);
+//                    alert(data.Data);
                 }
                 else {
-                    alert(data.ErrorMessage);
+//                    alert(data.ErrorMessage);
                 }
             });
         });
