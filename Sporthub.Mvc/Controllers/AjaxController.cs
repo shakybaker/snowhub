@@ -706,7 +706,7 @@ namespace Sporthub.Mvc.Controllers
         public JsonResult SnowReport(string resortID)
         {
             var feedUrl =
-                "http://services.onthesnow.com/axis2/services/SnowReport2009/lite/resort/snow/330/www.thesnowhub.com/47dda198b4ba86f7400a5bff63258f2dbe0ba27bf1406f74?lang=en&met=imp";
+                "http://services.onthesnow.com/axis2/services/SnowReport2009/lite/resort/snow/330/www.thesnowhub.com/47dda198b4ba86f7400a5bff63258f2dbe0ba27bf1406f74?lang=en&met=imp&response=json";
 
             var c = new WebClient();
             var data = c.DownloadString(feedUrl);
